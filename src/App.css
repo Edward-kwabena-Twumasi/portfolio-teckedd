@@ -1,18 +1,9 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App{
+  box-sizing: border-box;
+  overflow: hidden;
 }
-
 .animateIn{
   transform: translateY(-40px);
   transition: transform 1s ease-in-out;
@@ -132,3 +123,40 @@
     
   }
 } 
+
+.languages div{
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 2s;
+  backface-visibility: hidden;
+  background-color: black;
+  transform-origin: center;
+  
+}
+.languages div:hover{
+  transform: rotateY(180deg) translateX(-100px);
+  
+}
+
+.english h2{
+  transform: translateX(10px);
+  position: absolute;
+  left: 0;
+ 
+}
+.spanish h2{
+  transform: translateX(60px);
+  position: absolute;
+  left: 0;
+ 
+}
+.french h2{
+  transform: translateX(110px);
+  position: absolute;
+  left: 0;
+ 
+}
+.languages div h2:nth-child(1){
+  background-color: red;
+  transform: rotateY(180deg) translateX(-12%);
+}

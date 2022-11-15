@@ -102,25 +102,44 @@ const About=(props)=>{
             </div>
             <div className="verbal mt-6 mb-5 flex flex-col w-screen">
                 <h1 className="title lg:font-semibold lg:text-2xl mb-3 font-bold self-start text-pink-500">Languages I speak</h1>
-                <div className="flex self-center justify-start gap-4 flex-wrap w-full">
-                <h2 className=" p-6 pt-4 pb-2  rounded-full shadow-xl ">English  <span className="font-normal font-serif hidden lg:inline text-green-900">Proficient</span> </h2> 
-                <h2 className=" p-6 pt-4 pb-2  rounded-full shadow-xl ">Spanish  <span className="font-normal font-serif hidden lg:inline text-green-500">Intermediate</span> </h2> 
-                <h2 className=" p-6 pt-4 pb-2  rounded-full shadow-xl ">French  <span className="font-normal font-serif hidden lg:inline  text-green-500">Intermediate</span> </h2> 
-                <h2 className=" p-6 pt-4 pb-2  rounded-full shadow-xl ">Portuguese  <span className="font-normal font-serif hidden lg:inline text-yellow-600">Beginner</span> </h2> 
+                <div className="languages flex self-center justify-start gap-6 flex-wrap w-full">
+                    <div className="english  relative left-0">  
+                       <h2 className=" lg:p-2   rounded-full shadow-xl w-20 bg-slate-700 text-white left-0">Hello </h2> 
+  
+                        <h2 className=" lg:p-2   rounded-full shadow-xl w-20 bg-slate-700 text-white left-0">English </h2> 
+                    </div>
+                    <div className="english  relative left-20">  
+                       <h2 className=" lg:p-2   rounded-full shadow-xl w-20 bg-slate-700 text-white left-20">Hola </h2> 
+  
+                        <h2 className=" lg:p-2   rounded-full shadow-xl w-20 bg-slate-700 text-white left-20">Spanish </h2> 
+                    </div>
+                    <div className="english  relative left-40">  
+                       <h2 className=" lg:p-2   rounded-full shadow-xl w-20 bg-slate-700 text-white left-40">Hello </h2> 
+  
+                        <h2 className=" lg:p-2   rounded-full shadow-xl w-20 bg-slate-700 text-white left-40">French </h2> 
+                    </div>
+                    {/* <div className="spanish  relative">    
+                        <h2 className=" lg:p-2   rounded-full shadow-xl ">spanish </h2> 
+                        <h2 className=" lg:p-2   rounded-full shadow-xl ">Hola </h2> 
+                    </div>
+                    <div className="french relative ">    
+                        <h2 className=" lg:p-2   rounded-full shadow-xl ">French </h2> 
+                        <h2 className=" lg:p-2   rounded-full shadow-xl ">Hello </h2> 
+                    </div> */}
                 </div>
             </div>
             <h1 className="title lg:font-bold lg:text-2xl mb-3 font-normal self-start text-pink-500">Skills</h1>
             <div className="skills mt-10  flex flex-col w-3/4 self-center " ref={skillsRef}>
-                <div className="flex self-center justify-start gap-4   w-3/4 ">
-                <h2 className=" p-6 pt-2 pb-2  rounded-full shadow-xl bg-slate-800 text-white font-bold ">Frontend Development </h2> 
-                <h2 className=" p-6 pt-2 pb-2  rounded-full shadow-xl bg-slate-800 text-white font-bold ">Backend Development </h2> 
-                <h2 className=" p-6 pt-2 pb-2  rounded-full shadow-xl bg-slate-800 text-white font-bold ">Team leadership</h2> 
-                <h2 className=" p-6 pt-2 pb-2  rounded-full shadow-xl bg-slate-800 text-white font-bold ">Programming Skills Training</h2> 
-                <h2 className=" p-6 pt-2 pb-2  rounded-full shadow-xl bg-slate-800 text-white font-bold ">Mobile and Web app Development</h2>
-                <h2 className=" p-6 pt-2 pb-2  rounded-full shadow-xl bg-slate-800 text-white font-bold ">Good Interpersonal Relationship</h2>
-                <h2 className=" p-6 pt-2 pb-2  rounded-full shadow-xl bg-slate-800 text-white font-bold ">Machine Learning</h2> 
-                <h2 className=" p-6 pt-2 pb-2  rounded-full shadow-xl bg-slate-800 text-white font-bold ">Data analysis</h2> 
-                <h2 className=" p-6 pt-2 pb-2  rounded-full shadow-xl bg-slate-800 text-white font-bold ">Project Collaboration</h2>
+                <div className="flex lg:self-center justify-start gap-4   w-3/4 ">
+                <h2 className=" p-6 pt-3 pb-3  rounded-md shadow-xl bg-slate-800 text-white lg:font-bold font-mono ">Frontend Development </h2> 
+                <h2 className=" p-6 pt-3 pb-3  rounded-md shadow-xl bg-slate-800 text-white lg:font-bold font-mono ">Backend Development </h2> 
+                <h2 className=" p-6 pt-3 pb-3  rounded-md shadow-xl bg-slate-800 text-white lg:font-bold font-mono ">Team leadership</h2> 
+                <h2 className=" p-6 pt-3 pb-3  rounded-md shadow-xl bg-slate-800 text-white lg:font-bold font-mono ">Programming Skills Training</h2> 
+                <h2 className=" p-6 pt-3 pb-3  rounded-md shadow-xl bg-slate-800 text-white lg:font-bold font-mono ">Mobile and Web app Development</h2>
+                <h2 className=" p-6 pt-3 pb-3  rounded-md shadow-xl bg-slate-800 text-white lg:font-bold font-mono ">Good Interpersonal Relationship</h2>
+                <h2 className=" p-6 pt-3 pb-3  rounded-md shadow-xl bg-slate-800 text-white lg:font-bold font-mono ">Machine Learning</h2> 
+                <h2 className=" p-6 pt-3 pb-3  rounded-md shadow-xl bg-slate-800 text-white lg:font-bold font-mono ">Data analysis</h2> 
+                <h2 className=" p-6 pt-3 pb-3  rounded-md shadow-xl bg-slate-800 text-white lg:font-bold font-mono ">Project Collaboration</h2>
                
                 </div>
             </div>
