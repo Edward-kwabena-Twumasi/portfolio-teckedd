@@ -18,3 +18,117 @@
   transition: transform 1s ease-in-out;
   visibility: visible;
 }
+
+.scaleUp{
+  transform: scale(1);
+  transition: transform 500ms ease-in-out;
+  
+}
+.skills {
+  perspective: 2000px;
+}
+.skills div{
+
+  position: relative;
+  transform: translateZ(300px) ;
+  transform-style: preserve-3d;
+  transition: transform 2s;
+  backface-visibility: hidden;
+  background-color: black;
+  transform-origin: center;
+}
+.skills div h2{
+  position: absolute;
+  
+  
+} 
+.my-name ,.project-section-title{
+	text-transform: uppercase;
+	background: linear-gradient(to right, rgb(236 72 153) 0%, rgb(30 41 59) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	
+}
+
+.skills div h2:nth-child(1) { transform: rotateY(  0deg) translateZ(288px); }
+.skills div h2:nth-child(2) { transform: rotateY( 40deg) translateZ(288px); }
+.skills div h2:nth-child(3) { transform: rotateY( 80deg) translateZ(288px); }
+.skills div h2:nth-child(4) { transform: rotateY(120deg) translateZ(288px); }
+.skills div h2:nth-child(5) { transform: rotateY(160deg) translateZ(288px); }
+.skills div h2:nth-child(6) { transform: rotateY(200deg) translateZ(288px); }
+.skills div h2:nth-child(7) { transform: rotateY(240deg) translateZ(288px); }
+.skills div h2:nth-child(8) { transform: rotateY(280deg) translateZ(288px); }
+.skills div h2:nth-child(9) { transform: rotateY(320deg) translateZ(288px); }
+
+.animateSkills{
+  animation-duration: 20s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  
+} 
+
+@keyframes slidein {
+  from {
+   
+   transform: rotateY(0deg) translateX(30%);
+    
+  }
+  
+  10%{
+   
+    
+    transform: rotateY(40deg) translateX(10%);
+
+  }
+  20%{
+   
+    
+    transform: rotateY(80deg) 20%;
+
+  }
+  30%{
+   
+    
+    transform: rotateY(120deg) 30%;
+
+  }
+  40%{
+   
+    
+    transform: rotateY(160deg) ;
+
+  }
+  50%{
+   
+    
+    transform: rotateY(200deg) ;
+
+  }
+  60%{
+   
+    
+    transform: rotateY(240deg) ;
+
+  }
+  70%{
+   
+    
+    transform: rotateY(280deg) ;
+
+  }
+  80%{
+   
+    
+    transform: rotateY(320deg) ;
+
+  }
+  
+
+  to {
+   
+    transform: rotateY(360deg) ;
+    
+    
+  }
+} 

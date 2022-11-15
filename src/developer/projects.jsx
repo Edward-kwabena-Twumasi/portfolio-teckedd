@@ -1,18 +1,19 @@
 import { useRef,useState,useEffect } from 'react';
+import imgurl from "../assets/web1.png";
+
 import 'animate.css';
 import '../App.css'
 
 
 const Projects=()=>{
-    const imgurl='https://cdn.vectorstock.com/i/1000x1000/54/49/realistic-phone-screen-template-no-notch-front-vector-26985449.webp';
 
     const myRef = useRef(null);
     
     useEffect(() => {
         // ✅ You can read or write refs in effects
        const projects= myRef.current;
-       const allProjects = projects.querySelectorAll('div > img')
-       const allProjectsDesc = projects.querySelectorAll('div > h1')
+       const allProjects = projects.querySelectorAll('div > div > div > img')
+       const allProjectsDesc = projects.querySelectorAll('div > div > div > h1')
        let options = {
         root: null,
         rootMargin: '0px',
@@ -51,27 +52,80 @@ const Projects=()=>{
       },[]);
 
       return (
-        <div ref={myRef} className="bg-blue-50 w-screen">
+        <div ref={myRef} className="bg-white w-screen">
 
-         <div className='h-screen flex flex-col '>
-            <h1 className='self-center text-3xl font-extrabold m-2 text-blue-500'>Machine Learning</h1>
-           <img src={imgurl} alt='phone' className='h-2/3 m-2 max-w-sm self-center invisible translate-y-22' id='first'></img>
-           <h1 className='text-center max-w-md m-4 self-center invisible'> This is a phone screen . The phone screen image was gotten from the internet.
-            This is a content that represents a project i have carried out</h1>
+         <div className='lg:h-screen flex flex-col justify-start pt-20 gap-6 p-3 '>
+         <h1 className='self-center lg:text-3xl text-2xl font-bold m-2 project-section-title'>Machine Learning Projects</h1>
+          <div className='project-list lg:flex md:flex justify-evenly'>
+            <div className='project flex flex-col'>
+              <h1 className='self-center text-xl font-normal m-2 text-slate-700'>Phishing Detection</h1>
+              <img src={imgurl} alt='phone' className='h-2/3 m-2 rounded-md shadow-lg max-w-sm self-center  invisible translate-y-22' id='first'></img>
+              <h1 className='text-center max-w-md m-4 self-center invisible'> This is a phone screen . The phone screen image was gotten from the internet.
+                This is a content that represents a project i have carried out</h1>
+            </div>
+            <div className='project flex flex-col'>
+              <h1 className='self-center text-xl font-normal m-2 text-slate-700'>Image Classification</h1>
+              <img src={imgurl} alt='phone' className='h-2/3 m-2 rounded-md shadow-lg max-w-sm self-center  invisible translate-y-22' id='first'></img>
+              <h1 className='text-center max-w-md m-4 self-center invisible'> This is a phone screen . The phone screen image was gotten from the internet.
+                This is a content that represents a project i have carried out</h1>
+            </div>
+            <div className='project flex flex-col'>
+              <h1 className='self-center text-xl font-normal m-2 text-slate-700'>Smart Literature review Assistant</h1>
+              <img src={imgurl} alt='phone' className='h-2/3 m-2 rounded-md shadow-lg max-w-sm self-center  invisible translate-y-22' id='first'></img>
+              <h1 className='text-center max-w-md m-4 self-center invisible'> This is a phone screen . The phone screen image was gotten from the internet.
+                This is a content that represents a project i have carried out</h1>
+            </div>
+          </div>  
          </div>
-         <div className='h-screen flex flex-col'>
-         <h1 className='self-center text-3xl font-extrabold m-2  text-blue-500'>Web development</h1>
-           <img src={imgurl} alt='phone' className='h-2/3 m-2 max-w-sm self-center invisible translate-y-22' id='second'></img>
-           <h1 className='text-center max-w-md m-4 self-center'> This is another screen . The 0ther screen image was gotten from the internet.
-            This is a content that represents a project i have carried out</h1>
+         
+         <div className='lg:h-screen flex flex-col justify-start pt-20 gap-6 p-3 '>
+         <h1 className='self-center lg:text-3xl text-2xl font-bold m-2 project-section-title'>Web Development Projects</h1>
+
+          <div className='project-list lg:flex md:flex justify-evenly'>
+            <div className='project flex flex-col'>
+              <h1 className='self-center text-xl font-normal m-2 text-slate-700'>Ecommerce</h1>
+              <img src={imgurl} alt='phone' className='h-2/3 m-2 rounded-md shadow-lg max-w-sm self-center  invisible translate-y-22' id='first'></img>
+              <h1 className='text-center max-w-md m-4 self-center invisible'> This is a phone screen . The phone screen image was gotten from the internet.
+                This is a content that represents a project i have carried out</h1>
+            </div>
+            <div className='project flex flex-col'>
+              <h1 className='self-center text-xl font-normal m-2 text-slate-700'>Stock Taking</h1>
+              <img src={imgurl} alt='phone' className='h-2/3 m-2 rounded-md shadow-lg max-w-sm self-center  invisible translate-y-22' id='first'></img>
+              <h1 className='text-center max-w-md m-4 self-center invisible'> This is a phone screen . The phone screen image was gotten from the internet.
+                This is a content that represents a project i have carried out</h1>
+            </div>
+            <div className='project flex flex-col'>
+              <h1 className='self-center text-xl font-normal m-2 text-slate-700'>Election Information System</h1>
+              <img src={imgurl} alt='phone' className='h-2/3 m-2 rounded-md shadow-lg max-w-sm self-center  invisible translate-y-22' id='first'></img>
+              <h1 className='text-center max-w-md m-4 self-center invisible'> This is a phone screen . The phone screen image was gotten from the internet.
+                This is a content that represents a project i have carried out</h1>
+            </div>
+          </div>  
          </div>
-         <div className='h-screen flex flex-col'>
-         <h1 className='self-center text-3xl font-extrabold m-2  text-blue-500'>Mobile App development</h1>
-           <img src={imgurl} alt='phone' className='h-2/3 m-2 max-w-sm self-center invisible translate-y-22' id='three'></img>
-           <h1 className='text-center max-w-md m-4 self-center invisible'> This is a third screen . The 0ther screen image was gotten from the internet.
-            This is a content that represents a project i have carried out</h1>
+
+         <div className='lg:h-screen flex flex-col justify-start pt-20 gap-6 p-3 '>
+         <h1 className='self-center lg:text-3xl text-2xl font-bold m-2 project-section-title'>Mobile App Development Projects</h1>
+
+          <div className='project-list lg:flex md:flex justify-evenly'>
+            <div className='project flex flex-col'>
+              <h1 className='self-center text-xl font-normal m-2 text-slate-700'>Integrated Ticketing System</h1>
+              <img src={imgurl} alt='phone' className='h-2/3 m-2 rounded-md shadow-lg max-w-sm self-center  invisible translate-y-22' id='first'></img>
+              <h1 className='text-center max-w-md m-4 self-center invisible'> This is a phone screen . The phone screen image was gotten from the internet.
+                This is a content that represents a project i have carried out</h1>
+            </div>
+            <div className='project flex flex-col'>
+              <h1 className='self-center text-xl font-normal m-2 text-slate-700'>Smart Farming App</h1>
+              <img src={imgurl} alt='phone' className='h-2/3 m-2 rounded-md shadow-lg max-w-sm self-center  invisible translate-y-22' id='first'></img>
+              <h1 className='text-center max-w-md m-4 self-center invisible'> This is a phone screen . The phone screen image was gotten from the internet.
+                This is a content that represents a project i have carried out</h1>
+            </div>
+          </div>  
          </div>
-        </div>
+         
+        </div> 
+      
+         
+         
       );
 
 }
