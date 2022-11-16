@@ -101,7 +101,7 @@ const About=(props)=>{
                 
             </div>
             <div className="verbal mt-6 mb-5 flex flex-col w-screen">
-                <h1 className="title lg:font-bold lg:text-2xl mb-3 font-bold self-start text-pink-500">Languages I speak</h1>
+                <h1 className="title lg:font-bold lg:text-2xl mb-3 font-bold self-start text-pink-500">Languages I speak <span className="text-sm font-thin font-mono">(Hover on languages to see a greeting)</span></h1>
                 <div className="languages flex self-center justify-start gap-6 flex-wrap w-full">
                     <div className="english  relative left-0">  
                        <h2 className=" lg:p-2 lg:px-4 p-1 px-2   rounded-full shadow-xl  bg-slate-700 text-white left-0 ">Hello,Welcome </h2> 
@@ -144,12 +144,12 @@ const About=(props)=>{
                 </div>
             </div>
             <div className="technical mt-12 flex flex-col" ref={techsRef}>
-                <h1 className="title lg:font-bold lg:text-2xl mb-3  font-normal self-start text-pink-500">
+                <h1 className="title lg:font-bold lg:text-2xl mb-3 mt-10 font-bold self-start text-pink-500">
                     Technologies I use
                   </h1>
                 <div className="flex flex-wrap">
                     <div className="web lg:w-1/3 md:w-1/2 w-screen p-2 scale-50 duration-500ms">
-                        <h1 className="text-center self-center font-bold">Web</h1>
+                        <h1 className="text-center self-center font-semibold m-2 text-xl">Web</h1>
                         <div className="flex self-center justify-center gap-2  flex-wrap shadow-lg py-10 rounded-xl bg-slate-500 ">
                             <h2 className="font-thin p-6 pt-2 pb-2  rounded-full shadow-4xl bg-slate-700 text-white  ">Javascript </h2> 
                             <h2 className="font-thin p-6 pt-2 pb-2  rounded-full shadow-4xl bg-slate-700 text-white  ">Nodejs  </h2> 
@@ -163,7 +163,7 @@ const About=(props)=>{
                         </div>
                     </div>
                     <div className="mobile lg:w-1/3 md:w-1/2 w-screen p-2 scale-50 duration-500ms">
-                    <h1 className="text-center self-center font-bold">Mobile</h1>
+                    <h1 className="text-center self-center font-semibold m-2 text-xl">Mobile</h1>
                         <div className="flex self-center justify-center gap-4  flex-wrap shadow-lg py-10 rounded-xl bg-slate-500 ">
                             <h2 className="font-thin p-6 pt-2 pb-2  rounded-full shadow-4xl bg-slate-700 text-white  ">Java</h2> 
                             <h2 className="font-thin p-6 pt-2 pb-2  rounded-full shadow-4xl bg-slate-700 text-white  ">Android  </h2> 
@@ -175,7 +175,7 @@ const About=(props)=>{
                     </div> 
 
                     <div className="machine-learning lg:w-1/3 md:w-1/2 w-screen p-2 scale-50 duration-500ms">
-                    <h1 className="text-center self-center font-bold">Machine Learning</h1>
+                    <h1 className="text-center self-center font-semibold m-2 text-xl">Machine Learning</h1>
                         <div className="flex self-center justify-center gap-4  flex-wrap shadow-lg py-10 rounded-xl bg-slate-500 ">
                             <h2 className="font-thin p-6 pt-2 pb-2  rounded-full shadow-4xl bg-slate-700 text-white  ">Python</h2> 
                             <h2 className="font-thin p-6 pt-2 pb-2  rounded-full shadow-4xl bg-slate-700 text-white  ">Numpy  </h2> 
@@ -187,7 +187,7 @@ const About=(props)=>{
                         </div>
                     </div>
                     <div className="other-tools lg:w-1/3 md:w-1/2 sm:w-screen p-2 scale-50 duration-500ms">
-                    <h1 className="text-center self-center font-bold">Cloud And DevOps</h1>
+                    <h1 className="text-center self-center font-semibold m-2 text-xl">Cloud And DevOps</h1>
                         <div className="flex self-center justify-center gap-4  flex-wrap shadow-lg py-10 rounded-xl bg-slate-500 ">
                             <h2 className="font-thin p-6 pt-2 pb-2  rounded-full shadow-4xl bg-slate-700 text-white  ">Aws</h2> 
                             <h2 className="font-thin p-6 pt-2 pb-2  rounded-full shadow-4xl bg-slate-700 text-white  ">Kubernates  </h2> 

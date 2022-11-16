@@ -26,10 +26,13 @@
   transition: transform 2s;
   backface-visibility: hidden;
   background-color: black;
-  transform-origin: center;
+  transform-origin: center center;
+  
 }
 .skills div h2{
   position: absolute;
+  max-width: 190px;
+  overflow-wrap: normal;
   
   
 } 

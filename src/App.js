@@ -10,7 +10,8 @@ function App() {
   const projectsRef = useRef(null);
 
   const updatePage=(index)=>{
-setPage(index);
+  setPage(index);
+  console.log(index)
   }
 
   useEffect(() => {
@@ -31,7 +32,18 @@ setPage(index);
           // entry.target.classList.toggle('animate_animated',entry.isIntersecting)
           if (entry.isIntersecting) {
               // console.log( entry.target.getAttribute("id"))
-              observer.unobserve(entry.target);
+             var attr= entry.target.getAttribute("id");
+             console.log(attr);
+             if (attr==="about") {
+              setPage(0)
+              console.log(page +" a")
+              
+             } else if (attr==="projects"){
+              setPage(1)
+              console.log(page +" p")
+
+             }
+             
               // entry.target.classList.toggle('animate-bounce',entry.isIntersecting)
           }
 
