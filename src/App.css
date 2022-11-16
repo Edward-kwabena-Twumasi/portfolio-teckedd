@@ -142,21 +142,55 @@
   transform: translateX(10px);
   position: absolute;
   left: 0;
- 
+  width: 80px;
+
 }
 .spanish h2{
   transform: translateX(60px);
   position: absolute;
   left: 0;
+  width: 80px;
+
  
 }
 .french h2{
   transform: translateX(110px);
   position: absolute;
   left: 0;
+  width: 80px;
+
  
 }
 .languages div h2:nth-child(1){
-  background-color: red;
+  background-color: rgb(236 72 153);
   transform: rotateY(180deg) translateX(-12%);
+  width: 80px;
+  overflow: hidden;
+  max-lines: 1;
+  text-overflow:ellipsis;
+}
+
+.languages div:hover h2:nth-child(1){
+  width: auto;
+  overflow: auto;
+animation-duration: 4s;
+transition: 2s ease;
+animation-name: fadeInGreeting;
+}
+
+@keyframes fadeInGreeting {
+  from{
+    opacity: 0.0;
+   
+  }
+  
+50%{
+  transform: scale(1.1) rotateY(180deg);
+
+}
+  
+  to{
+    opacity: 1;
+  }
+  
 }
