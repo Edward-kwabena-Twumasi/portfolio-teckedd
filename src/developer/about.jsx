@@ -80,22 +80,22 @@ const About=(props)=>{
             
             
             <div className="body lg:flex md:flex w-full justify-start m-3 ml-0 ">
-                 <div className="images lg:w-60 lg:h-60 h-40 w-40 rounded-full  bg-white self-start bg-no-repeat 
+                 <div className="images lg:w-60 lg:h-60 h-40 w-40 m-5 p-2 self-center rounded-full  bg-white lg:self-start bg-no-repeat 
                 bg-start bg-cover mr-7 hover:animate-bounce duration-500ms border-solid border-pink-600 "
                  style={{backgroundImage:"url("+background+")"}}>
                 </div> 
                
                 <div className="words flex flex-col ">
                     <div className="intro mb-7 flex flex-col">
-                        <h1 className="font-extrabold lg:text-3xl text-2xl self-start text-slate-800 mb-2 animate__animated animate__bounceInRight animate__faster">HELLO <span className="text-red-600">.</span></h1>
-                        <h1 className="font-extrabold lg:text-3xl text-2xl self-start text-slate-800 mb-2 duration-150 animate__animated animate__fadeInUp animate__fast">MY NAME IS <span className="text-yellow-600">.</span></h1>
-                        <h1 className="my-name font-extrabold lg:text-4xl self-start   duration-200 animate__animated animate__bounce animate__bounceInRight animate__slow">EDWARD KWABENA TWUMASI </h1>
+                        <h1 className="font-extrabold lg:text-3xl text-lg self-start text-slate-800 mb-2 animate__animated animate__bounceInRight animate__faster">HELLO <span className="text-red-600">.</span></h1>
+                        <h1 className="font-extrabold lg:text-3xl text-lg self-start text-slate-800 mb-2 duration-150 animate__animated animate__fadeInUp animate__fast">MY NAME IS <span className="text-yellow-600">.</span></h1>
+                        <h1 className="my-name font-extrabold lg:text-4xl text-xl self-start   duration-200 animate__animated animate__bounce animate__bounceInRight animate__slow">EDWARD KWABENA TWUMASI </h1>
                     </div>
 
                     <div className="more-intro flex flex-col">
-                        <h1 className="font-normal font-mono lg:text-xl text-lg  text-slate-700 self-start text-start">I ♥ basketball,rap,taking walks and Science</h1>
-                        <h1 className="lg:font-extrabold font-bold  text-pink-500 m-2 self-start ">AND</h1>
-                        <h1 className=" lg:text-xl font-normal font-mono text-lg text-slate-700 self-start text-start">I write code to give life to Ideas</h1>
+                        <h1 className="font-normal font-mono lg:text-xl text-sm  text-slate-700 self-start text-start">I ♥ basketball,rap,taking walks and Science</h1>
+                        <h1 className="lg:font-extrabold font-semibold  text-pink-500 m-2 self-start ">AND</h1>
+                        <h1 className=" lg:text-xl font-normal font-mono text-sm text-slate-700 self-start text-start">I write code to give life to Ideas</h1>
                     </div>
                 </div>
                 
@@ -131,15 +131,15 @@ const About=(props)=>{
             <h1 className="title lg:font-bold lg:text-2xl mt-8 font-bold self-start text-pink-500">Skills</h1>
             <div className="skills mt-10  flex flex-col w-3/4 self-center " ref={skillsRef}>
                 <div className="flex lg:self-center justify-start gap-4   w-3/4 ">
-                <h2 className=" p-6 pt-3 pb-3  rounded-md shadow-xl bg-slate-800 text-white lg:font-bold font-mono ">Frontend Development </h2> 
-                <h2 className=" p-6 pt-3 pb-3  rounded-md shadow-xl bg-slate-800 text-white lg:font-bold font-mono ">Backend Development </h2> 
-                <h2 className=" p-6 pt-3 pb-3  rounded-md shadow-xl bg-slate-800 text-white lg:font-bold font-mono ">Team leadership</h2> 
-                <h2 className=" p-6 pt-3 pb-3  rounded-md shadow-xl bg-slate-800 text-white lg:font-bold font-mono ">Programming Skills Training</h2> 
-                <h2 className=" p-6 pt-3 pb-3  rounded-md shadow-xl bg-slate-800 text-white lg:font-bold font-mono ">Mobile and Web app Development</h2>
-                <h2 className=" p-6 pt-3 pb-3  rounded-md shadow-xl bg-slate-800 text-white lg:font-bold font-mono ">Good Interpersonal Relationship</h2>
-                <h2 className=" p-6 pt-3 pb-3  rounded-md shadow-xl bg-slate-800 text-white lg:font-bold font-mono ">Machine Learning</h2> 
-                <h2 className=" p-6 pt-3 pb-3  rounded-md shadow-xl bg-slate-800 text-white lg:font-bold font-mono ">Data analysis</h2> 
-                <h2 className=" p-6 pt-3 pb-3  rounded-md shadow-xl bg-slate-800 text-white lg:font-bold font-mono ">Project Collaboration</h2>
+                <h2 className=" p-6 pt-3 pb-3  rounded-md shadow-xl bg-slate-800 text-white lg:font-bold font-mono text-sm ">Frontend Development </h2> 
+                <h2 className=" p-6 pt-3 pb-3  rounded-md shadow-xl bg-slate-800 text-white lg:font-bold font-mono text-sm ">Backend Development </h2> 
+                <h2 className=" p-6 pt-3 pb-3  rounded-md shadow-xl bg-slate-800 text-white lg:font-bold font-mono text-sm ">Team leadership</h2> 
+                <h2 className=" p-6 pt-3 pb-3  rounded-md shadow-xl bg-slate-800 text-white lg:font-bold font-mono text-sm ">Programming Skills Training</h2> 
+                <h2 className=" p-6 pt-3 pb-3  rounded-md shadow-xl bg-slate-800 text-white lg:font-bold font-mono text-sm ">Mobile and Web app Development</h2>
+                <h2 className=" p-6 pt-3 pb-3  rounded-md shadow-xl bg-slate-800 text-white lg:font-bold font-mono text-sm ">Good Interpersonal Relationship</h2>
+                <h2 className=" p-6 pt-3 pb-3  rounded-md shadow-xl bg-slate-800 text-white lg:font-bold font-mono text-sm ">Machine Learning</h2> 
+                <h2 className=" p-6 pt-3 pb-3  rounded-md shadow-xl bg-slate-800 text-white lg:font-bold font-mono text-sm ">Data analysis</h2> 
+                <h2 className=" p-6 pt-3 pb-3  rounded-md shadow-xl bg-slate-800 text-white lg:font-bold font-mono text-sm ">Project Collaboration</h2>
                
                 </div>
             </div>
