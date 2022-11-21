@@ -36,7 +36,7 @@
   
   
 } 
-.my-name ,.project-section-title{
+.my-name ,.project-section-title,.education{
 	text-transform: uppercase;
 	background: linear-gradient(to right, rgb(236 72 153) 0%, rgb(30 41 59) 100%);
 	-webkit-background-clip: text;

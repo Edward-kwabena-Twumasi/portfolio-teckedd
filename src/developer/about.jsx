@@ -96,6 +96,8 @@ const About=(props)=>{
                         <h1 className="font-normal font-mono lg:text-xl text-sm  text-slate-700 self-start text-start">I ♥ basketball,rap,taking walks and Science</h1>
                         <h1 className="lg:font-extrabold font-semibold  text-pink-500 m-2 self-start ">AND</h1>
                         <h1 className=" lg:text-xl font-normal font-mono text-sm text-slate-700 self-start text-start">I write code to give life to Ideas</h1>
+                        <h1 className="edutcation lg:text-xl font-bold font-mono text-md text-slate-700 self-start text-start">Currently a computer science graduate KNUST-Ghana</h1>
+
                     </div>
                 </div>
                 
