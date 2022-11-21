@@ -60,20 +60,17 @@ const Projects=()=>{
             <div className='project flex flex-col'>
               <h1 className='self-center text-xl font-normal m-2 text-slate-700'>Phishing Detection</h1>
               <img src={imgurl} alt='phone' className='h-2/3 m-2 rounded-md shadow-lg max-w-sm self-center  invisible translate-y-22' id='first'></img>
-              <h1 className='text-center max-w-md m-4 self-center invisible'> This is a phone screen . The phone screen image was gotten from the internet.
-                This is a content that represents a project i have carried out</h1>
+              <h1 className='text-center max-w-md m-4 self-center invisible'> A machine learning model trained on a large dataset of labelled urls, using about 7 scikit learn estimators and NLP </h1>
             </div>
             <div className='project flex flex-col'>
               <h1 className='self-center text-xl font-normal m-2 text-slate-700'>Image Classification</h1>
               <img src={imgurl} alt='phone' className='h-2/3 m-2 rounded-md shadow-lg max-w-sm self-center  invisible translate-y-22' id='first'></img>
-              <h1 className='text-center max-w-md m-4 self-center invisible'> This is a phone screen . The phone screen image was gotten from the internet.
-                This is a content that represents a project i have carried out</h1>
+              <h1 className='text-center max-w-md m-4 self-center invisible'> A basic image classification with Tensorflow using the MNIST dataset</h1>
             </div>
             <div className='project flex flex-col'>
               <h1 className='self-center text-xl font-normal m-2 text-slate-700'>Smart Literature review Assistant</h1>
               <img src={imgurl} alt='phone' className='h-2/3 m-2 rounded-md shadow-lg max-w-sm self-center  invisible translate-y-22' id='first'></img>
-              <h1 className='text-center max-w-md m-4 self-center invisible'> This is a phone screen . The phone screen image was gotten from the internet.
-                This is a content that represents a project i have carried out</h1>
+              <h1 className='text-center max-w-md m-4 self-center invisible'> A very smart  AI system that seeks to aid researchers in doing literature review.</h1>
             </div>
           </div>  
          </div>
@@ -85,20 +82,17 @@ const Projects=()=>{
             <div className='project flex flex-col'>
               <h1 className='self-center text-xl font-normal m-2 text-slate-700'>Ecommerce</h1>
               <img src={imgurl} alt='phone' className='h-2/3 m-2 rounded-md shadow-lg max-w-sm self-center  invisible translate-y-22' id='first'></img>
-              <h1 className='text-center max-w-md m-4 self-center invisible'> This is a phone screen . The phone screen image was gotten from the internet.
-                This is a content that represents a project i have carried out</h1>
+              <h1 className='text-center max-w-md m-4 self-center invisible'>An ecommerce web platform built for a client to sell organic foods with paystack payment integration</h1>
             </div>
             <div className='project flex flex-col'>
               <h1 className='self-center text-xl font-normal m-2 text-slate-700'>Stock Taking</h1>
               <img src={imgurl} alt='phone' className='h-2/3 m-2 rounded-md shadow-lg max-w-sm self-center  invisible translate-y-22' id='first'></img>
-              <h1 className='text-center max-w-md m-4 self-center invisible'> This is a phone screen . The phone screen image was gotten from the internet.
-                This is a content that represents a project i have carried out</h1>
+              <h1 className='text-center max-w-md m-4 self-center invisible'>A stock taking web platform that will aid a client in taking stock of her products</h1>
             </div>
             <div className='project flex flex-col'>
               <h1 className='self-center text-xl font-normal m-2 text-slate-700'>Election Information System</h1>
               <img src={imgurl} alt='phone' className='h-2/3 m-2 rounded-md shadow-lg max-w-sm self-center  invisible translate-y-22' id='first'></img>
-              <h1 className='text-center max-w-md m-4 self-center invisible'> This is a phone screen . The phone screen image was gotten from the internet.
-                This is a content that represents a project i have carried out</h1>
+              <h1 className='text-center max-w-md m-4 self-center invisible'>A frontend Development of a project undertaken by a group I am part that aims to provide quality election information to Ghanains.</h1>
             </div>
           </div>  
          </div>
@@ -110,14 +104,12 @@ const Projects=()=>{
             <div className='project flex flex-col'>
               <h1 className='self-center text-xl font-normal m-2 text-slate-700'>Integrated Ticketing System</h1>
               <img src={imgurl} alt='phone' className='h-2/3 m-2 rounded-md shadow-lg max-w-sm self-center  invisible translate-y-22' id='first'></img>
-              <h1 className='text-center max-w-md m-4 self-center invisible'> This is a phone screen . The phone screen image was gotten from the internet.
-                This is a content that represents a project i have carried out</h1>
+              <h1 className='text-center max-w-md m-4 self-center invisible'>An integrated ticketing platform for booking bus, train and flight tickets all on one single app.</h1>
             </div>
             <div className='project flex flex-col'>
               <h1 className='self-center text-xl font-normal m-2 text-slate-700'>Smart Farming App</h1>
               <img src={imgurl} alt='phone' className='h-2/3 m-2 rounded-md shadow-lg max-w-sm self-center  invisible translate-y-22' id='first'></img>
-              <h1 className='text-center max-w-md m-4 self-center invisible'> This is a phone screen . The phone screen image was gotten from the internet.
-                This is a content that represents a project i have carried out</h1>
+              <h1 className='text-center max-w-md m-4 self-center invisible'>(Contributor) A mobile app to help farmers indentify several species of weed using a deep learning model,how to deal with them and also inform them about soil conditions. </h1>
             </div>
           </div>  
          </div>
