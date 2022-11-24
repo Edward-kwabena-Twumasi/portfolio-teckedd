@@ -205,11 +205,12 @@ animation-name: fadeInGreeting;
 }
 .domeoverlay h1{
   position: absolute;
-  padding: 15px;
-  width: 50px;
-  height: 50px;
+  padding: 20px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   place-content: center;
+  transition: 1s ease-out;
 }
 .domeoverlay h1:nth-child(1){
   transform: translateY(-50px) translateX(-360px);
@@ -230,4 +231,27 @@ animation-name: fadeInGreeting;
 .domeoverlay h1:nth-child(5){
   transform: translateY(-70px) translateX(360px);
 
+}
+
+@media (max-width: 640px) {
+  .domeoverlay h1:nth-child(1){
+    transform: translateY(-20px) translateX(-160px);
+  
+  }
+  .domeoverlay h1:nth-child(2){
+    transform: translateY(-90px) translateX(-110px);
+  
+  }
+  .domeoverlay h1:nth-child(3){
+    transform: translateY(-110px) translateX(7px);
+  
+  }
+  .domeoverlay h1:nth-child(4){
+    transform: translateY(-85px) translateX(110px);
+  
+  }
+  .domeoverlay h1:nth-child(5){
+    transform: translateY(-20px) translateX(160px);
+  
+  }
 }

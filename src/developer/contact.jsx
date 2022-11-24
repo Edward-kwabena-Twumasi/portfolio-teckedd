@@ -10,11 +10,11 @@ const Contact=()=>{
                 
             </div> 
             <div className="domeoverlay h-[50px] w-screen mb-0  flex justify-center gap-7">
-                        <h1 className="bg-white shadow-2xl">{AiFillGoogleCircle}</h1>
-                        <h1 className="bg-white shadow-2xl">{AiFillLinkedin}</h1>
-                        <h1 className="bg-white shadow-2xl">{AiFillPhone}</h1>
-                        <h1 className="bg-white shadow-2xl">{AiOutlineGithub}</h1>
-                        <h1 className="bg-white shadow-2xl">{AiOutlineTwitter}</h1> 
+                        <h1 className="bg-slate-200 shadow-2xl text-3xl">{<AiFillGoogleCircle/>}</h1>
+                        <h1 className="bg-slate-200 shadow-2xl text-3xl">{<AiFillLinkedin/>}</h1>
+                        <h1 className="bg-slate-200 shadow-2xl text-3xl">{<AiFillPhone/>}</h1>
+                        <h1 className="bg-slate-200 shadow-2xl text-3xl">{<AiOutlineGithub/>}</h1>
+                        <h1 className="bg-slate-200 shadow-2xl text-3xl">{<AiOutlineTwitter/>}</h1> 
                 </div> 
         </div>
     );
