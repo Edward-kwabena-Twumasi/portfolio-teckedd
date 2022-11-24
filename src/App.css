@@ -3,6 +3,8 @@
 .App{
   box-sizing: border-box;
   overflow: hidden;
+  scroll-behavior: smooth;
+  transition: 1s ease-in-out;
 }
 .animateIn{
   transform: translateY(-40px);
@@ -196,4 +198,36 @@ animation-name: fadeInGreeting;
     opacity: 1;
   }
   
+}
+
+.dome{
+  transform: translateX(-200px) translateY(100px);
+}
+.domeoverlay h1{
+  position: absolute;
+  padding: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  place-content: center;
+}
+.domeoverlay h1:nth-child(1){
+  transform: translateY(-50px) translateX(-360px);
+
+}
+.domeoverlay h1:nth-child(2){
+  transform: translateY(-90px) translateX(-240px);
+
+}
+.domeoverlay h1:nth-child(3){
+  transform: translateY(-120px) translateX(10px);
+
+}
+.domeoverlay h1:nth-child(4){
+  transform: translateY(-95px) translateX(250px);
+
+}
+.domeoverlay h1:nth-child(5){
+  transform: translateY(-70px) translateX(360px);
+
 }

@@ -76,7 +76,7 @@ const About=(props)=>{
 
     return(
         
-        <div className={"About h-full bg-pink-50 flex flex-col justify-center lg:p-20 p-9 items-start w-full"}>
+        <div className={"About h-full bg-pink-50 flex flex-col justify-center lg:p-20 p-4 items-start w-full"}>
             
             
             <div className="body lg:flex md:flex w-full justify-start m-3 ml-0 ">
@@ -96,7 +96,7 @@ const About=(props)=>{
                         <h1 className="font-normal font-mono lg:text-xl text-sm  text-slate-700 self-start text-start">I ♥ basketball,rap,taking walks and Science</h1>
                         <h1 className="lg:font-extrabold font-semibold  text-pink-500 m-2 self-start ">AND</h1>
                         <h1 className=" lg:text-xl font-normal font-mono text-sm text-slate-700 self-start text-start">I write code to give life to Ideas</h1>
-                        <h1 className="edutcation lg:text-xl font-bold font-mono text-md text-slate-700 self-start text-start">Currently a computer science graduate KNUST-Ghana</h1>
+                        <h1 className="edutcation lg:text-xl font-bold font-mono text-md text-slate-700 self-start text-start mt-2 border-4 border-slate-800 p-2">I am Currently a computer science graduate of KNUST-Ghana</h1>
 
                     </div>
                 </div>
@@ -152,7 +152,7 @@ const About=(props)=>{
                 <div className="flex flex-wrap">
                     <div className="web lg:w-1/3 md:w-1/2 w-screen p-2 scale-50 duration-500ms">
                         <h1 className="text-center self-center font-semibold m-2 text-xl">Web</h1>
-                        <div className="flex self-center justify-center gap-2  flex-wrap shadow-lg py-10 rounded-xl bg-slate-500 ">
+                        <div className="flex self-center justify-center gap-2  flex-wrap shadow-lg py-10 rounded-xl bg-pink-50 border-t border-t-slate-700 ">
                             <h2 className="font-thin p-6 pt-2 pb-2  rounded-full shadow-4xl bg-slate-700 text-white  ">Javascript </h2> 
                             <h2 className="font-thin p-6 pt-2 pb-2  rounded-full shadow-4xl bg-slate-700 text-white  ">Nodejs  </h2> 
                             <h2 className="font-thin p-6 pt-2 pb-2  rounded-full shadow-4xl bg-slate-700 text-white  ">React Js  </h2>
@@ -166,7 +166,7 @@ const About=(props)=>{
                     </div>
                     <div className="mobile lg:w-1/3 md:w-1/2 w-screen p-2 scale-50 duration-500ms">
                     <h1 className="text-center self-center font-semibold m-2 text-xl">Mobile</h1>
-                        <div className="flex self-center justify-center gap-4  flex-wrap shadow-lg py-10 rounded-xl bg-slate-500 ">
+                        <div className="flex self-center justify-center gap-4  flex-wrap shadow-lg py-10 rounded-xl bg-pink-50 border-t border-t-slate-700 ">
                             <h2 className="font-thin p-6 pt-2 pb-2  rounded-full shadow-4xl bg-slate-700 text-white  ">Java</h2> 
                             <h2 className="font-thin p-6 pt-2 pb-2  rounded-full shadow-4xl bg-slate-700 text-white  ">Android  </h2> 
                             <h2 className="font-thin p-6 pt-2 pb-2  rounded-full shadow-4xl bg-slate-700 text-white  ">Dart </h2>
@@ -178,7 +178,7 @@ const About=(props)=>{
 
                     <div className="machine-learning lg:w-1/3 md:w-1/2 w-screen p-2 scale-50 duration-500ms">
                     <h1 className="text-center self-center font-semibold m-2 text-xl">Machine Learning</h1>
-                        <div className="flex self-center justify-center gap-4  flex-wrap shadow-lg py-10 rounded-xl bg-slate-500 ">
+                        <div className="flex self-center justify-center gap-4  flex-wrap shadow-lg py-10 rounded-xl bg-pink-50 border-t border-t-slate-700 ">
                             <h2 className="font-thin p-6 pt-2 pb-2  rounded-full shadow-4xl bg-slate-700 text-white  ">Python</h2> 
                             <h2 className="font-thin p-6 pt-2 pb-2  rounded-full shadow-4xl bg-slate-700 text-white  ">Numpy  </h2> 
                             <h2 className="font-thin p-6 pt-2 pb-2  rounded-full shadow-4xl bg-slate-700 text-white  ">Pandas </h2>
@@ -190,7 +190,7 @@ const About=(props)=>{
                     </div>
                     <div className="other-tools lg:w-1/3 md:w-1/2 sm:w-screen p-2 scale-50 duration-500ms">
                     <h1 className="text-center self-center font-semibold m-2 text-xl">Cloud And DevOps</h1>
-                        <div className="flex self-center justify-center gap-4  flex-wrap shadow-lg py-10 rounded-xl bg-slate-500 ">
+                        <div className="flex self-center justify-center gap-4  flex-wrap shadow-lg py-10 rounded-xl bg-pink-50 border-t border-t-slate-700 ">
                             <h2 className="font-thin p-6 pt-2 pb-2  rounded-full shadow-4xl bg-slate-700 text-white  ">Aws</h2> 
                             <h2 className="font-thin p-6 pt-2 pb-2  rounded-full shadow-4xl bg-slate-700 text-white  ">Kubernates  </h2> 
                             <h2 className="font-thin p-6 pt-2 pb-2  rounded-full shadow-4xl bg-slate-700 text-white  ">Docker </h2>

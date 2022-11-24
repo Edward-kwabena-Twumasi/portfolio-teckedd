@@ -2,6 +2,7 @@ import './App.css';
 import About from './developer/about';
 import Projects from './developer/projects';
 import { useRef,useState,useEffect } from 'react';
+import Contact from './developer/contact';
 
 
 function App() {
@@ -61,17 +62,20 @@ function App() {
 
   return (
   
-    <div className="App flex flex-col w-screen">
+    <div className="App flex flex-col w-screen scroll-smooth ">
        <div className="nav flex self-center justify-center gap-4 p-8 pt-4 pb-4  rounded-full shadow-xl bg-slate-50  mb-0 fixed border-pink-500 ">
-              <button className="font-bold text-pink-500">About me</button> 
-              <button className='text-slate-800'>Projects</button> 
-              <button>Contact</button>  
+              <button className="font-bold text-pink-500"><a href='#about'>About me</a></button> 
+              <button className='text-slate-800'><a href='#projects'>Projects</a> </button> 
+              <button ><a href='#contact'>Contact</a></button>  
        </div>
        <div id='about' ref={aboutRef}>
         <About/>
        </div>
        <div id='projects' ref={projectsRef}>
       <Projects/>
+      </div>
+      <div id='contact'>
+      <Contact/>
       </div>
     </div>
   );
