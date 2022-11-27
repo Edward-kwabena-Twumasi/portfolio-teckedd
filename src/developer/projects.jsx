@@ -1,6 +1,11 @@
 import { useRef,useState,useEffect } from 'react';
 import electionHuburl from "../assets/electionhub.PNG";
 import treckTrafficurl from "../assets/trecktraffic.PNG";
+import phishingurl from "../assets/phishing_detect.png";
+import cnnurl from "../assets/cnn_classify.jpeg";
+import rnnurl from "../assets/rnn_text.png";
+
+
 
 
 import 'animate.css';
@@ -61,17 +66,17 @@ const Projects=()=>{
           <div className='project-list flex-wrap  lg:flex md:flex justify-evenly'>
             <div className='project flex flex-col'>
               <h1 className='self-center text-xl font-normal m-2 text-slate-700 font-serif '>Phishing Detection</h1>
-              <img src={electionHuburl} alt='phone' className='h-2/3 m-2 rounded-md shadow-lg max-w-sm self-center  invisible translate-y-22' id='first'></img>
+              <img src={phishingurl} alt='phone' className='h-2/3 m-2 rounded-md shadow-lg max-w-sm self-center  invisible translate-y-22' id='first'></img>
               <h1 className='text-center max-w-md m-4 self-center invisible font-medium text-black-400'> A machine learning model trained on a large dataset of labelled urls, using about 7 scikit learn estimators and NLP </h1>
             </div>
             <div className='project flex flex-col'>
               <h1 className='self-center text-xl font-normal m-2 text-slate-700 font-serif '>Image Classification</h1>
-              <img src={electionHuburl} alt='phone' className='h-2/3 m-2 rounded-md shadow-lg max-w-sm self-center  invisible translate-y-22' id='first'></img>
-              <h1 className='text-center max-w-md m-4 self-center invisible font-medium text-black-400'> A basic image classification with Tensorflow using the MNIST dataset</h1>
+              <img src={cnnurl} alt='phone' className='h-2/3 m-2 rounded-md shadow-lg max-w-sm self-center  invisible translate-y-22' id='first'></img>
+              <h1 className='text-center max-w-md m-4 self-center invisible font-medium text-black-400'> An CNN for image classification using Tensorflow and a dataset of cats and dogs</h1>
             </div>
             <div className='project flex flex-col'>
               <h1 className='self-center text-xl font-normal m-2 text-slate-700 font-serif '>Smart Literature review Assistant</h1>
-              <img src={electionHuburl} alt='phone' className='h-2/3 m-2 rounded-md shadow-lg max-w-sm self-center  invisible translate-y-22' id='first'></img>
+              <img src={rnnurl} alt='phone' className='h-2/3 m-2 rounded-md shadow-lg max-w-sm self-center  invisible translate-y-22' id='first'></img>
               <h1 className='text-center max-w-md m-4 self-center invisible font-medium text-black-400'> A very smart  AI system that seeks to aid researchers in doing literature review.</h1>
             </div>
           </div>  
@@ -103,7 +108,7 @@ const Projects=()=>{
             </div>
             <div className='project flex flex-col'>
               <h1 className='self-center text-xl font-normal m-2 text-slate-700 font-serif '>Automated traffic data archiving system</h1>
-              <img src={electionHuburl} alt='phone' className='h-2/3 m-2 rounded-md shadow-lg max-w-sm self-center  invisible translate-y-22' id='first'></img>
+              <img src={treckTrafficurl} alt='phone' className='h-2/3 m-2 rounded-md shadow-lg max-w-sm self-center  invisible translate-y-22' id='first'></img>
               <h1 className='text-center max-w-md m-4 self-center invisible font-medium text-black-400'>A web platform focused on promoting holistic development by aiding university students aquire useful extra-curricular skills</h1>
             </div>
           </div>  

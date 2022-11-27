@@ -203,7 +203,7 @@ animation-name: fadeInGreeting;
 .dome{
   transform: translateX(-200px) translateY(100px);
 }
-.domeoverlay h1{
+.domeoverlay a{
   position: absolute;
   padding: 20px;
   width: 60px;
@@ -212,45 +212,45 @@ animation-name: fadeInGreeting;
   place-content: center;
   transition: 1s ease-out;
 }
-.domeoverlay h1:nth-child(1){
+.domeoverlay a:nth-child(1){
   transform: translateY(-50px) translateX(-360px);
 
 }
-.domeoverlay h1:nth-child(2){
+.domeoverlay a:nth-child(2){
   transform: translateY(-90px) translateX(-240px);
 
 }
-.domeoverlay h1:nth-child(3){
+.domeoverlay a:nth-child(3){
   transform: translateY(-120px) translateX(10px);
 
 }
-.domeoverlay h1:nth-child(4){
+.domeoverlay a:nth-child(4){
   transform: translateY(-95px) translateX(250px);
 
 }
-.domeoverlay h1:nth-child(5){
+.domeoverlay a:nth-child(5){
   transform: translateY(-70px) translateX(360px);
 
 }
 
 @media (max-width: 640px) {
-  .domeoverlay h1:nth-child(1){
+  .domeoverlay a:nth-child(1){
     transform: translateY(-20px) translateX(-160px);
   
   }
-  .domeoverlay h1:nth-child(2){
+  .domeoverlay a:nth-child(2){
     transform: translateY(-90px) translateX(-110px);
   
   }
-  .domeoverlay h1:nth-child(3){
+  .domeoverlay a:nth-child(3){
     transform: translateY(-110px) translateX(7px);
   
   }
-  .domeoverlay h1:nth-child(4){
+  .domeoverlay a:nth-child(4){
     transform: translateY(-85px) translateX(110px);
   
   }
-  .domeoverlay h1:nth-child(5){
+  .domeoverlay a:nth-child(5){
     transform: translateY(-20px) translateX(160px);
   
   }
