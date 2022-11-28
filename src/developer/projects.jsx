@@ -4,6 +4,8 @@ import treckTrafficurl from "../assets/trecktraffic.PNG";
 import phishingurl from "../assets/phishing_detect.png";
 import cnnurl from "../assets/cnn_classify.jpeg";
 import rnnurl from "../assets/rnn_text.png";
+import ecommerceurl from "../assets/ecommerce.png";
+
 
 
 
@@ -88,7 +90,7 @@ const Projects=()=>{
           <div className='project-list flex-wrap  lg:flex md:flex justify-evenly'>
             <div className='project flex flex-col'>
               <h1 className='self-center text-xl font-normal m-2 text-slate-700 font-serif '>Ecommerce</h1>
-              <img src={electionHuburl} alt='phone' className='h-2/3 m-2 rounded-md shadow-lg max-w-sm self-center  invisible translate-y-22' id='first'></img>
+              <img src={ecommerceurl} alt='phone' className='h-2/3 m-2 rounded-md shadow-lg max-w-sm self-center  invisible translate-y-22' id='first'></img>
               <h1 className='text-center max-w-md m-4 self-center invisible font-medium text-black-400'>An ecommerce web platform built for a client to sell organic foods with paystack payment integration</h1>
             </div>
             <div className='project flex flex-col'>
@@ -109,7 +111,8 @@ const Projects=()=>{
             <div className='project flex flex-col'>
               <h1 className='self-center text-xl font-normal m-2 text-slate-700 font-serif '>Automated traffic data archiving system</h1>
               <img src={treckTrafficurl} alt='phone' className='h-2/3 m-2 rounded-md shadow-lg max-w-sm self-center  invisible translate-y-22' id='first'></img>
-              <h1 className='text-center max-w-md m-4 self-center invisible font-medium text-black-400'>A web platform focused on promoting holistic development by aiding university students aquire useful extra-curricular skills</h1>
+              <h1 className='text-center max-w-md m-4 self-center invisible font-medium text-black-400'>
+An automated data extraction tool for accessing and archiving google traffic data for traffic analysis and research</h1>
             </div>
           </div>  
          </div>
