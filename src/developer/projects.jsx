@@ -65,7 +65,7 @@ const Projects=()=>{
       return (
         <div ref={myRef} className="projects bg-white w-screen" >
 
-         <div className=' flex flex-col justify-start pt-20 gap-6 p-3 '>
+         <div className=' flex flex-col justify-start pt-20 gap-8 p-3 '>
          <h1 className='self-center lg:text-3xl text-2xl font-bold m-2 project-section-title'>Machine Learning Projects</h1>
           <div className='project-list flex-wrap  lg:flex md:flex justify-evenly'>
             <div className='project flex flex-col mb-6'>
@@ -119,7 +119,7 @@ An automated data extraction tool for accessing and archiving google traffic dat
           </div>  
          </div>
 
-         <div className=' flex flex-col justify-start pt-20 gap-6 p-3 '>
+         <div className=' flex flex-col justify-start pt-20 gap-8 p-3 '>
          <h1 className='self-center lg:text-3xl text-2xl font-bold m-2 project-section-title'>Mobile App Development Projects</h1>
 
           <div className='project-list flex-wrap  lg:flex md:flex justify-evenly'>
