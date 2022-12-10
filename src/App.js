@@ -63,9 +63,9 @@ function App() {
   return (
   
     <div className="App flex flex-col w-screen scroll-smooth ">
-       <div className="nav flex self-center justify-center gap-4 lg:p-4 p-2  rounded-full shadow-xl bg-slate-50  mb-0 fixed border-pink-500 ">
-              <button className="font-bold text-pink-500"><a href='#about'>About me</a></button> 
-              <button className='text-slate-800'><a href='#projects'>Projects</a> </button> 
+       <div className="nav flex self-center justify-center gap-4 lg:p-4 p-2  rounded-full shadow-xl bg-slate-50  mb-0 fixed border-pink-500 m-4 ">
+              <button className="font-bold text-[#2b5592]"><a href='#about'>About me</a></button> 
+              <button className='text-pink-800'><a href='#projects'>Projects</a> </button> 
               <button ><a href='#contact'>Contact</a></button>  
        </div>
        <div id='about' ref={aboutRef}>

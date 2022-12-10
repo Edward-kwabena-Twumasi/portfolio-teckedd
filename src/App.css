@@ -6,6 +6,18 @@
   scroll-behavior: smooth;
   transition: 1s ease-in-out;
 }
+.about{
+  border-left: 4px solid #2b5592;
+  margin-left: 2px;
+}
+.projects{
+  border-left: 4px solid rgb(236 72 153);
+  margin-left: 2px;
+}
+.contact{
+  border-left: 4px solid black;
+  margin-left: 2px;
+}
 .animateIn{
   transform: translateY(-40px);
   transition: transform 1s ease-in-out;
@@ -28,8 +40,8 @@
   transition: transform 2s;
   backface-visibility: hidden;
   background-color: black;
-  transform-origin: center center;
-  
+transform-origin: center;
+transform-box: view-box;  
 }
 .skills div h2{
   position: absolute;
@@ -38,7 +50,22 @@
   
   
 } 
-.my-name ,.project-section-title,.education{
+.head{
+  background: linear-gradient(to right, #2b5592 0%, #64bbe3 100%);
+  padding: 40px;
+  border-radius: 10px;
+}
+.default-color{
+  background-color: #2b5592;
+}
+.my-name {
+	text-transform: uppercase;
+	background: linear-gradient(to right, #64bbe3 0%, white 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	
+}
+.project-section-title,.education{
 	text-transform: uppercase;
 	background: linear-gradient(to right, rgb(236 72 153) 0%, rgb(30 41 59) 100%);
 	-webkit-background-clip: text;
@@ -140,6 +167,7 @@
 }
 .languages div:hover{
   transform: rotateY(180deg) translateX(-100px);
+  color: #2b5592;
   
 }
 
@@ -147,14 +175,14 @@
   transform: translateX(10px);
   position: absolute;
   left: 0;
-  width: 80px;
+  width: 85px;
 
 }
 .spanish h2{
   transform: translateX(60px);
   position: absolute;
   left: 0;
-  width: 80px;
+  width: 85px;
 
  
 }
@@ -162,7 +190,7 @@
   transform: translateX(110px);
   position: absolute;
   left: 0;
-  width: 80px;
+  width: 85px;
 
  
 }
@@ -211,25 +239,26 @@ animation-name: fadeInGreeting;
   border-radius: 50%;
   place-content: center;
   transition: 1s ease-out;
+  margin-top: 120px;
 }
 .domeoverlay a:nth-child(1){
-  transform: translateY(-50px) translateX(-360px);
+  transform: translateY(-5px) translateX(-360px);
 
 }
 .domeoverlay a:nth-child(2){
-  transform: translateY(-90px) translateX(-240px);
+  transform: translateY(-40px) translateX(-240px);
 
 }
 .domeoverlay a:nth-child(3){
-  transform: translateY(-120px) translateX(10px);
+  transform: translateY(-70px) translateX(10px);
 
 }
 .domeoverlay a:nth-child(4){
-  transform: translateY(-95px) translateX(250px);
+  transform: translateY(-35px) translateX(250px);
 
 }
 .domeoverlay a:nth-child(5){
-  transform: translateY(-70px) translateX(360px);
+  transform: translateY(-10px) translateX(360px);
 
 }
 
@@ -254,4 +283,14 @@ animation-name: fadeInGreeting;
     transform: translateY(-20px) translateX(160px);
   
   }
+}
+.project:hover{
+  transform: scale(1.2);
+  transition: 500ms ease-in-out;
+  background-color: #2b5592;
+  border-radius: 5px;
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  color: white;
 }
