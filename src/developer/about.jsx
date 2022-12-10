@@ -80,7 +80,7 @@ const About=(props)=>{
         <div className={"about h-full flex flex-col justify-center lg:p-20 p-4 items-start w-full"}>
             
             
-            <div className="head lg:flex md:flex w-full justify-start m-3 ml-0  shadow-xl mx-5">
+            <div className="head lg:flex md:flex w-full justify-start m-3 ml-0  shadow-xl mx-5 lg:p-[40px] p-9px">
                  <div className="images lg:w-60 lg:h-60 h-40 w-40 m-5 p-2 self-center rounded-full  bg-white lg:self-start bg-no-repeat 
                 bg-start bg-cover mr-7 hover:animate-bounce duration-500ms border-solid border-pink-600 "
                  style={{backgroundImage:"url("+background+")"}}>

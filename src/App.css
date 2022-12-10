@@ -52,7 +52,7 @@ transform-box: view-box;
 } 
 .head{
   background: linear-gradient(to right, #2b5592 0%, #64bbe3 100%);
-  padding: 40px;
+
   border-radius: 10px;
 }
 .default-color{
