@@ -67,6 +67,7 @@ transform-box: view-box;
 }
 .project-section-title,.education{
 	text-transform: uppercase;
+  font-family: 'Sacramento', cursive;
 	background: linear-gradient(to right, rgb(236 72 153) 0%, rgb(30 41 59) 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -159,15 +160,14 @@ transform-box: view-box;
 .languages div{
   position: relative;
   transform-style: preserve-3d;
-  transition: transform 2s;
+  transition: transform 1s;
   backface-visibility: hidden;
   background-color: black;
   transform-origin: center;
   
 }
 .languages div:hover{
-  transform: rotateY(180deg) translateX(-100px);
-  color: #2b5592;
+  transform: rotateX(-180deg) ;
   
 }
 
@@ -192,12 +192,13 @@ transform-box: view-box;
   left: 0;
   width: 85px;
 
- 
 }
+
+
 .languages div h2:nth-child(1){
-  background-color: rgb(236 72 153);
-  transform: rotateY(180deg) translateX(-12%);
-  width: 80px;
+  background-color: #2b5592;
+  transform: rotateX(180deg) translateX(4%);
+  width: 100px;
   overflow: hidden;
   max-lines: 1;
   text-overflow:ellipsis;
