@@ -94,9 +94,7 @@ const About=(props)=>{
                     </div>
 
                     <div className="more-intro flex flex-col shadow-xl p-5 rounded-md">
-                        <h1 className="edutcation lg:text-xl font-bold font-mono text-md text-white self-start text-start mt-2 ">I am Currently a computer science graduate of KNUST-Ghana</h1>
-                        <h1 className="font-normal font-mono lg:text-xl text-sm  text-white self-start text-start border-white  m-4 ml-0">I ♥ basketball,rap,taking walks and Science</h1>
-                        <h1 className=" lg:text-xl font-normal font-mono text-sm text-white self-start text-start mb-1">Also, a full-stack software engineer</h1>
+                        <h1 className=" lg:text-xl font-normal font-mono text-sm text-white self-start text-start mb-1">I am a programming Enthusiast constantly seeking out innovative solutions to everyday problems. I simply love programming!</h1>
 
                     </div>
                 </div>
