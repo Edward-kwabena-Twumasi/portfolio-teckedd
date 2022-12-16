@@ -168,7 +168,7 @@ transform-box: view-box;
   
 }
 .languages div:hover{
-  transform: rotateX(-180deg) ;
+   transform: rotateX(180deg) ; 
   
 }
 
@@ -180,7 +180,7 @@ transform-box: view-box;
 
 }
 .spanish h2{
-  transform: translateX(60px);
+  transform: translateX(70px);
   position: absolute;
   left: 0;
   width: 85px;
@@ -188,7 +188,7 @@ transform-box: view-box;
  
 }
 .french h2{
-  transform: translateX(110px);
+  transform: translateX(120px);
   position: absolute;
   left: 0;
   width: 85px;
@@ -198,34 +198,38 @@ transform-box: view-box;
 
 .languages div h2:nth-child(1){
   background-color: #2b5592;
-  transform: rotateX(-180deg) translateX(4%);
+  transform: rotateX(180deg) translateX(4%);
   width: 100px;
   overflow: hidden;
   max-lines: 1;
   text-overflow:ellipsis;
 }
 
+
 .languages div:hover h2:nth-child(1){
-  width: auto;
-  overflow: auto;
-animation-duration: 4s;
+width: auto;
+overflow: auto;
+animation-duration: 3s;
 transition: 1s ease-in-out;
-animation-name: fadeInGreeting;
+animation-name: revealGreeting;
 }
 
-@keyframes fadeInGreeting {
+
+@keyframes revealGreeting {
   from{
-    opacity: 0.0;
-   
+    /* opacity: 0.0; */
+ transform: rotateX(30deg);
+     
   }
   
-50%{
-  transform: scale(1.1) rotateX(180deg);
-
-}
+  50%{
+    transform: rotateX(120deg) ;
+  }
   
   to{
-    opacity: 1;
+    transform: rotateX(180deg) ;
+    
+    
   }
   
 }
