@@ -87,7 +87,7 @@ const About=(props)=>{
                 </div> 
                
                 <div className="words flex flex-col ">
-                    <div className="intro mb-7 flex flex-col">
+                    <div className="intro mb-7 flex flex-col m-2">
                         <h1 className="font-extrabold lg:text-3xl text-lg self-start text-white mb-2 animate__animated animate__bounceInRight animate__faster">HELLO <span className="text-red-600">.</span></h1>
                         <h1 className="font-extrabold lg:text-3xl text-lg self-start text-white mb-2 duration-150 animate__animated animate__fadeInUp animate__fast">MY NAME IS <span className="text-yellow-600">.</span></h1>
                         <h1 className="my-name font-extrabold lg:text-4xl text-xl self-start   duration-200 animate__animated animate__bounce animate__bounceInRight animate__slow">EDWARD KWABENA TWUMASI </h1>
