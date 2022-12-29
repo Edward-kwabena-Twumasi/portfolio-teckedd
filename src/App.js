@@ -3,81 +3,104 @@ import About from './developer/about';
 import Projects from './developer/projects';
 import { useRef,useState,useEffect } from 'react';
 import Contact from './developer/contact';
+import NavBar from './developer/navbar';
+import Skills from './developer/skills';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from 'react-router-dom';
+import Frontend from './developer/front-end';
 
 
 function App() {
   const [page,setPage]=useState(0);
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
+  const skillsRef = useRef(null);
 
-  const updatePage=(index)=>{
-  setPage(index);
-  console.log(index)
-  }
 
-  useEffect(() => {
-      // ✅ You can read or write refs in effects
-     const about= aboutRef.current;
-     const projects= projectsRef.current;
 
+  // useEffect(() => {
+  //     // ✅ You can read or write refs in effects
+  //    const about= aboutRef.current;     
+
+  //   let animateContent=about.querySelectorAll('h1')
+  //   let aboutOptions = {
+  //     root: null,
+  //     rootMargin: '0px',
+  //     threshold: 0.0
+  //   }
      
-     let options = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0.2
-    }
-   
-    
-    let observer = new IntersectionObserver((entries)=>{
-      entries.forEach((entry) => {
-          // entry.target.classList.toggle('animate_animated',entry.isIntersecting)
-          if (entry.isIntersecting) {
-              // console.log( entry.target.getAttribute("id"))
-             var attr= entry.target.getAttribute("id");
-             console.log(attr);
-             if (attr==="about") {
-              setPage(0)
-              console.log(page +" a")
-              
-             } else if (attr==="projects"){
-              setPage(1)
-              console.log(page +" p")
-
-             }
-             
-              // entry.target.classList.toggle('animate-bounce',entry.isIntersecting)
-          }
-
+  //   //obsserve skills ref
+  //   let aboutObserver = new IntersectionObserver((entries)=>{
+  //     entries.forEach((entry) => {
+  //         // entry.target.classList.toggle('animate_animated',entry.isIntersecting)
+  //           entry.target.classList.toggle('animateSkills',entry.isIntersecting)
+           
+  //         if (entry.isIntersecting) {
+  //             aboutObserver.observe(entry.target);
+  //         }
+  //         // else
+  //         // aboutObserver.unobserve(entry.target);
+          
          
-         
-        });
-    }, options);
+  //       });
+  //   }, aboutOptions);
 
-    observer.observe(about);
-    observer.observe(projects);
+  //   animateContent.forEach(j=>{
+  //     if (j) {
+  //         aboutObserver.observe(j);
+  //         // return () => aboutObserver.unobserve(j)
+  //     }
+  //   })
 
-
-    },[]);
+  //   },[]);
 
 
   return (
   
-    <div className="App flex flex-col w-screen scroll-smooth ">
-       <div className="nav flex self-center justify-center gap-4 lg:p-4 p-2  rounded-full shadow-xl bg-slate-50  mb-0 fixed border-pink-500 m-4 z-50">
-              <button className="font-bold text-[#2b5592]"><a href='#about'>About me</a></button> 
-              <button className='text-pink-800'><a href='#projects'>Projects</a> </button> 
-              <button ><a href='#contact'>Contact</a></button>  
-       </div>
-       <div id='about' ref={aboutRef}>
-        <About/>
-       </div>
-       <div id='projects' ref={projectsRef}>
-      <Projects/>
-      </div>
-      <div id='contact'>
-      <Contact/>
-      </div>
-    </div>
+        
+        <div className='flex w-screen h-screen'>
+
+          <div className='h-full w-1/12 bg-slate-700 fixed border-pink-500 z-50 flex flex-col justify-center gap-5'>
+            <div className='border-2 border-white w-[60px] h-[60px] rounded-full self-center'>
+
+            </div>
+            <div className='border-2 border-white w-[60px] h-[60px] rounded-full self-center'>
+
+            </div>
+            <div className='border-2 border-white w-[60px] h-[60px] rounded-full self-center'>
+
+            </div>
+            <div className='border-2 border-white w-[60px] h-[60px] rounded-full self-center'>
+
+           </div>
+          </div>
+
+          <div className=' rounded-lg h-full overflow-scroll w-11/12 content'>
+            <Router> 
+                 <NavBar /> 
+                 <div className='content-body bg-slate-600 rounded-lg shadow-xl'>
+                  <Routes>
+                    <Route exact path="/"  element={<About ref={aboutRef} />}></Route>           
+                    {/* <Route exact path="/about" element={<About/>}></Route> */}
+                    <Route path="/skills" element={<Skills ref={skillsRef}/>}>
+                     <Route exact path="frontend"  element={<Frontend  />}></Route> 
+                     <Route index element={<Frontend />} />          
+                   
+                    </Route>
+                    <Route exact path="/projects" element={<Projects/>}></Route>
+                    <Route path="/contact" element={<Contact/>}></Route>
+ 
+                </Routes>
+                 </div>
+            </Router>
+           
+          </div>
+         </div>   
+  
+    
   );
 }
 

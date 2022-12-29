@@ -7,15 +7,12 @@
   transition: 1s ease-in-out;
 }
 .about{
-  border-left: 4px solid #2b5592;
   margin-left: 2px;
 }
 .projects{
-  border-left: 4px solid rgb(236 72 153);
   margin-left: 2px;
 }
 .contact{
-  border-left: 4px solid black;
   margin-left: 2px;
 }
 .animateIn{
@@ -29,37 +26,25 @@
   transition: transform 500ms ease-in-out;
   
 }
-.skills {
-  perspective: 2000px;
-}
-.skills div{
 
-  position: relative;
-  transform: translateZ(300px) ;
-  transform-style: preserve-3d;
-  transition: transform 2s;
-  backface-visibility: hidden;
-  background-color: black;
-transform-origin: center;
-transform-box: view-box;  
+.nav{
+ 
+height: 9%;
 }
-.skills div h2{
-  position: absolute;
-  max-width: 200px;
-  overflow-wrap: normal;
-  
-  
-} 
-.head{
-  background: linear-gradient(to right, #2b5592 0%, #64bbe3 100%);
+.content{
+  margin-left: 8.3%;
+}
+.content-body{
+  height: 85%;
+  width: 94%;
+  margin-left: 3%;
+  margin-top: 6%;
 
-  border-radius: 10px;
 }
 .default-color{
   background-color: #2b5592;
 }
 .my-name {
-	text-transform: uppercase;
 	background: linear-gradient(to right, #64bbe3 0%, white 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -75,15 +60,7 @@ transform-box: view-box;
 	
 }
 
-.skills div h2:nth-child(1) { transform: rotateY(  0deg) translateZ(288px); }
-.skills div h2:nth-child(2) { transform: rotateY( 40deg) translateZ(288px); }
-.skills div h2:nth-child(3) { transform: rotateY( 80deg) translateZ(288px); }
-.skills div h2:nth-child(4) { transform: rotateY(120deg) translateZ(288px); }
-.skills div h2:nth-child(5) { transform: rotateY(160deg) translateZ(288px); }
-.skills div h2:nth-child(6) { transform: rotateY(200deg) translateZ(288px); }
-.skills div h2:nth-child(7) { transform: rotateY(240deg) translateZ(288px); }
-.skills div h2:nth-child(8) { transform: rotateY(280deg) translateZ(288px); }
-.skills div h2:nth-child(9) { transform: rotateY(320deg) translateZ(288px); }
+
 
 .animateSkills{
   animation-duration: 20s;
