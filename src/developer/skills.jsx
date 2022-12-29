@@ -1,20 +1,26 @@
 
 
-import { forwardRef, useEffect, useRef } from 'react';
-import { Link, Route, Router, Routes , Outlet} from 'react-router-dom';
-import Frontend from './front-end';
+import { forwardRef,  useState } from 'react';
+import { Link, Outlet} from 'react-router-dom';
 const Skills=forwardRef((props,ref)=>{
-
+const [index,setIndex]=useState(0)
+let styles=["border-2",""]
+const handleClick=(newIndex)=>{
+  setIndex(newIndex)
+}
 
     return (
-       <div className="flex flex-col h-full skills" ref={ref}>
+       <div className="skills page flex flex-col h-full skills" ref={ref}>
         
                 <div className="flex gap-6 mt-5 justify-center">
-                    <button className='text-white rounded-full p-2 px-6 border-white border-2'><Link to='frontend'>Frontend</Link> </button> 
-                    <button className='text-white rounded-full p-2 px-6 border-white border-1'><Link to='backend'>Backend</Link> </button> 
+                    <button className= {`text-white rounded-full p-2 px-6 border-white  ${styles[index]}` } onClick={()=>handleClick(0)}><Link to='frontend'>Frontend</Link> </button> 
+                    <button className={`text-white rounded-full p-2 px-6 border-white ${styles[1-index]}` } onClick={()=>handleClick(1)}><Link to='backend'>Backend</Link> </button> 
 
                 </div>
-               <Outlet/>
+                <div className="overflow-scroll">
+                <Outlet/>
+                </div>
+               
                        
        </div>
 

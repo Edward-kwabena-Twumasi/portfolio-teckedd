@@ -10,7 +10,8 @@ import {
   Routes,
   Route
 } from 'react-router-dom';
-import Frontend from './developer/front-end';
+import Frontend from './developer/frontend';
+import Backend from './developer/backend';
 
 
 function App() {
@@ -87,6 +88,7 @@ function App() {
                     {/* <Route exact path="/about" element={<About/>}></Route> */}
                     <Route path="/skills" element={<Skills ref={skillsRef}/>}>
                      <Route exact path="frontend"  element={<Frontend  />}></Route> 
+                     <Route exact path="backend"  element={<Backend  />}></Route> 
                      <Route index element={<Frontend />} />          
                    
                     </Route>

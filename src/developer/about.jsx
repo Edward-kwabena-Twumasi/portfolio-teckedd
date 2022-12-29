@@ -55,7 +55,7 @@ const About=forwardRef((props,ref)=>{
             {/* <h1 className="font-extrabold lg:text-3xl text-lg self-start text-white mb-2  ml-[80px]
             animate__animated animate__bounceInRight animate__faster">Hello, Welcome <span className="text-red-600">.</span></h1> */}
 
-            <div className=" lg:flex md:flex w-full justify-start gap-7 ml-7 ">
+            <div className="page lg:flex md:flex w-full justify-start gap-7 ml-7 ">
                 
                 <div className="photo lg:w-[300px] lg:h-[300px] self-center rounded-full  bg-no-repeat border-4
                 bg-start bg-cover mr-7  border-solid border-pink-600 p-3"

@@ -2,7 +2,7 @@ import { AiFillGoogleCircle,AiFillLinkedin,AiOutlineGithub,AiFillPhone,AiOutline
 
 const Contact=()=>{
     return (
-        <div className="contact flex flex-col   h-[250px] relative">
+        <div className="contactpage flex flex-col   h-[250px] relative">
          
              <h1 className="text-4xl font-extrabold text-black self-center m-2">Contact & Socials</h1>
            

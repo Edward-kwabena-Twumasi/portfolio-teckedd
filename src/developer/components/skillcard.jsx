@@ -1,8 +1,8 @@
 
 
-const SkillCard=({icon,title,body,key})=>{
+const SkillCard=({icon,title,body})=>{
     return (
-        <div className="tile w-[400px] h-auto flex flex-col text-white m-3 bg-slate-500 p-4 rounded-md" key={key}>
+        <div className="tile w-[400px] h-auto flex flex-col text-white m-3 bg-slate-500 p-4 rounded-md" >
             <div className="flex gap-5 h-6 w-full">
                 <div className="leading">
                 {icon}

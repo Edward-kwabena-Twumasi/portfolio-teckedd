@@ -68,7 +68,7 @@ const Projects=()=>{
       },[]);
 
       return (
-        <div ref={myRef} className="projects  w-screen" >
+        <div ref={myRef} className="projects page w-screen" >
 
          <div className=' flex flex-col justify-start pt-20 gap-8 p-3 '>
          <h1 className='self-center lg:text-3xl text-2xl font-bold m-2 project-section-title'>Machine Learning Projects</h1>
