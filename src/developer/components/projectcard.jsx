@@ -3,9 +3,9 @@
 const ProjectCard=({image})=>{
     const img=image;
     return (
-        <div className="parent pt-5">
-            <div className="base p-4 pt-2" >
-                <h3 className="font-bold text-xl m-1">Automated data archiver</h3>
+        <div className="parent pt-5 mb-5">
+            <div className="base p-4 pt-2 flex flex-col" >
+                <h3 className="font-semibold text-lg m-1">Automated data archiver</h3>
                 <div className="image" style={{background:`url(${img})`,backgroundSize:"cover"}}>
 
                 </div>  

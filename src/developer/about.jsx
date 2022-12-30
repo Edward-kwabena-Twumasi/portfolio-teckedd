@@ -68,7 +68,7 @@ const About=forwardRef((props,ref)=>{
                      duration-200 animate__animated animate__bounce animate__bounceInRight animate__slow">TeckEdd
                      </h1>
                     
-                    <p className="description text-white text-md mt-4 max-w-md">
+                    <p className="summary text-white text-md mt-4 max-w-md">
                         Edward is a computer science graduate, experienced full stack engineer,a highly motivated and passion driven individual.
                         I love to constantly expand the spectrum of skills I have. I have some cool projects you will love.
 

@@ -10,16 +10,11 @@ import stocktakingurl from "../assets/stock-tacking.png";
 import smartfarmUrl from "../assets/smart-farming.png";
 import notesUrl from "../assets/notes.png";
 
-
-
-
-
-
-
-
 import 'animate.css';
 import '../App.css'
-import ProjectCard from './components/projectcard';
+import { Link } from 'react-router-dom';
+import Completed from './projectlist';
+
 
 
 const Projects=()=>{
@@ -67,14 +62,21 @@ const Projects=()=>{
       
 
       },[]);
+      const [index,setIndex]=useState(0)
+      let styles=["border-2",""]
+      const handleClick=(newIndex)=>{
+        setIndex(newIndex)
+      }
 
       return (
-        <div ref={myRef} className="projects page gap-0 grid grid-cols-3 p-3 pl-[70px] justify-evenly overflow-auto w-full" >
-        
-         <ProjectCard image={treckTrafficurl}/>
-         <ProjectCard image={treckTrafficurl}/>
-         <ProjectCard image={treckTrafficurl}/>
-         <ProjectCard image={treckTrafficurl}/>
+        <div ref={myRef} className="projects page flex flex-col  w-full overflow-scroll" >
+
+         <div className="flex gap-6 mt-5 justify-center m-2">
+                    <button className= {`text-white rounded-full p-2 px-6 border-white  ${styles[index]}` } onClick={()=>handleClick(0)}><Link to='completed'>Completed</Link> </button> 
+                    <button className={`text-white rounded-full p-2 px-6 border-white ${styles[1-index]}` } onClick={()=>handleClick(1)}><Link to='ongoing'>Ongoing</Link> </button> 
+
+         </div>
+        <Completed image={electionHuburl}/>
 
         </div> 
       

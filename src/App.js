@@ -12,6 +12,7 @@ import {
 } from 'react-router-dom';
 import Frontend from './developer/frontend';
 import Backend from './developer/backend';
+import Completed from './developer/projectlist';
 
 
 function App() {
@@ -92,7 +93,12 @@ function App() {
                      <Route index element={<Frontend />} />          
                    
                     </Route>
-                    <Route exact path="/projects" element={<Projects/>}></Route>
+                    <Route exact path="/projects" element={<Projects/>}>
+                    <Route exact path="completed"  element={<Completed  />}></Route> 
+                     <Route exact path="ongoing"  element={<Completed  />}></Route> 
+                     <Route index element={<Completed />} />          
+                   
+                    </Route>
                     <Route path="/contact" element={<Contact/>}></Route>
  
                 </Routes>
