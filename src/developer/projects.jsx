@@ -1,19 +1,11 @@
 import { useRef,useState,useEffect } from 'react';
-import electionHuburl from "../assets/electionhub.PNG";
-import treckTrafficurl from "../assets/trecktraffic.PNG";
-import phishingurl from "../assets/phishing_detect.png";
-import cnnurl from "../assets/cnn_classify.jpeg";
-import rnnurl from "../assets/rnn_text.png";
-import ecommerceurl from "../assets/ecommerce.png";
-import travelmates from "../assets/travelmates.png";
-import stocktakingurl from "../assets/stock-tacking.png";
-import smartfarmUrl from "../assets/smart-farming.png";
-import notesUrl from "../assets/notes.png";
 
 import 'animate.css';
 import '../App.css'
 import { Link } from 'react-router-dom';
-import Completed from './projectlist';
+import ProjectList from './projectlist';
+import {projects} from "../data.js"
+
 
 
 
@@ -62,6 +54,7 @@ const Projects=()=>{
       
 
       },[]);
+
       const [index,setIndex]=useState(0)
       let styles=["border-2",""]
       const handleClick=(newIndex)=>{
@@ -69,14 +62,17 @@ const Projects=()=>{
       }
 
       return (
-        <div ref={myRef} className="projects page flex flex-col  w-full overflow-scroll" >
+        <div ref={myRef} className="projects page flex flex-col  w-full h-full" >
 
          <div className="flex gap-6 mt-5 justify-center m-2">
                     <button className= {`text-white rounded-full p-2 px-6 border-white  ${styles[index]}` } onClick={()=>handleClick(0)}><Link to='completed'>Completed</Link> </button> 
                     <button className={`text-white rounded-full p-2 px-6 border-white ${styles[1-index]}` } onClick={()=>handleClick(1)}><Link to='ongoing'>Ongoing</Link> </button> 
 
          </div>
-        <Completed image={electionHuburl}/>
+         <div className="overflow-scroll hide-scroll">
+         <ProjectList projects={projects}/>
+         </div>
+       
 
         </div> 
       

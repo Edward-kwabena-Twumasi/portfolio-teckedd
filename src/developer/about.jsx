@@ -52,25 +52,24 @@ const About=forwardRef((props,ref)=>{
         <div className="about h-full flex flex-col justify-center  p-4 items-start 
         " ref={ref}>
             
-            {/* <h1 className="font-extrabold lg:text-3xl text-lg self-start text-white mb-2  ml-[80px]
-            animate__animated animate__bounceInRight animate__faster">Hello, Welcome <span className="text-red-600">.</span></h1> */}
+            
 
             <div className="page lg:flex md:flex w-full justify-start gap-7 ml-7 ">
                 
                 <div className="photo lg:w-[300px] lg:h-[300px] self-center rounded-full  bg-no-repeat border-4
-                bg-start bg-cover mr-7  border-solid border-pink-600 p-3"
+                bg-start bg-cover mr-7  border-solid border-[#ffe4c4] p-6"
                 >
                 </div> 
                
                 <div className="text flex flex-col p-2">
                    <h1 className="role text-white mt-5 font-bold">Full stack software engineer</h1>
-                   <h1 className="my-name font-extrabold lg:text-3xl text-xl self-start mt-6 
+                   <h1 className="text-white font-extrabold lg:text-3xl text-xl self-start mt-6 
                      duration-200 animate__animated animate__bounce animate__bounceInRight animate__slow">TeckEdd
                      </h1>
                     
-                    <p className="summary text-white text-md mt-4 max-w-md">
-                        Edward is a computer science graduate, experienced full stack engineer,a highly motivated and passion driven individual.
-                        I love to constantly expand the spectrum of skills I have. I have some cool projects you will love.
+                    <p className="summary text-white text-md mt-4 max-w-lg">
+                        Edward is a computer science graduate, an AI enthusiat and a highly motivated and passion driven individual.
+                        He loves to learn and improve and aspires to own a Tech Company in the near future.
 
                     </p>
                     <div className="flex gap-6 mt-5">

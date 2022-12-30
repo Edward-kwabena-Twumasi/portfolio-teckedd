@@ -7,9 +7,9 @@ import SkillLevel from "./components/skilllevel"
 
 const Frontend=()=>{
     return (
-        <div className="flex flex-col pl-14 h-full">
+        <div className="flex flex-col pl-10 h-full">
             <h1 className="title text-3xl text-white font-bold m-3">Front end skills</h1>
-            <div className="flex justify-between">
+            <div className="flex justify-between ">
                 <div>
                 {
                 skills.map((skill,idx)=>{

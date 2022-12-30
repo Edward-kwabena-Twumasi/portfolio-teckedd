@@ -1,4 +1,8 @@
  @import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap'); 
+ *{
+  box-sizing: border-box;
+  scrollbar-width: 2px;
+ }
 
 .App{
   box-sizing: border-box;
@@ -55,7 +59,7 @@ height: 455px;
 position: relative;
 width: 300px;
 height: 455px;
-background-color: bisque;
+background-color: #ffe4c4;
 border-radius: 12px;
 }
 .image{
@@ -104,23 +108,18 @@ z-index: 6;
 .default-color{
   background-color: #2b5592;
 }
-.my-name {
-	background: linear-gradient(to right, #64bbe3 0%, white 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	
-}
-.project-section-title,.education{
-	text-transform: uppercase;
-  font-family: 'Bad Script', cursive;
-
-	background: linear-gradient(to right, rgb(236 72 153) 0%, rgb(30 41 59) 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	
+.hide-scroll::-webkit-scrollbar {
+  display: none;
 }
 
-
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scroll {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.ease-switch{
+  transition: 400ms ease-in-out;
+}
 
 .animateSkills{
   animation-duration: 20s;
@@ -195,156 +194,6 @@ z-index: 6;
   }
 } 
 
-.languages div{
-  position: relative;
-  transform-style: preserve-3d;
-  transition: transform 1s;
-  backface-visibility: hidden;
-  background-color: black;
-  transform-origin: center;
-  
-}
-.languages div:hover{
-   transform: rotateX(180deg) ; 
-  
-}
-
-.english h2{
-  transform: translateX(10px);
-  position: absolute;
-  left: 0;
-  width: 85px;
-
-}
-.spanish h2{
-  transform: translateX(70px);
-  position: absolute;
-  left: 0;
-  width: 85px;
-
- 
-}
-.french h2{
-  transform: translateX(120px);
-  position: absolute;
-  left: 0;
-  width: 85px;
-
-}
 
 
-.languages div h2:nth-child(1){
-  background-color: #2b5592;
-  transform: rotateX(180deg) translateX(4%);
-  width: 100px;
-  overflow: hidden;
-  max-lines: 1;
-  text-overflow:ellipsis;
-}
 
-
-.languages div:hover h2:nth-child(1){
-width: auto;
-overflow: auto;
-animation-duration: 3s;
-transition: 1s ease-in-out;
-animation-name: revealGreeting;
-}
-
-
-@keyframes revealGreeting {
-  from{
-    /* opacity: 0.0; */
- transform: rotateX(30deg);
-     
-  }
-  
-  50%{
-    transform: rotateX(120deg) ;
-  }
-  
-  to{
-    transform: rotateX(180deg) ;
-    
-    
-  }
-  
-}
-
-.dome{
-  transform: translateX(-200px) translateY(100px);
-}
-.domeoverlay a{
-  position: absolute;
-  padding: 20px;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  place-content: center;
-  transition: 1s ease-out;
-  margin-top: 120px;
-}
-.domeoverlay a:nth-child(1){
-  transform: translateY(-5px) translateX(-360px);
-
-}
-.domeoverlay a:nth-child(2){
-  transform: translateY(-40px) translateX(-240px);
-
-}
-.domeoverlay a:nth-child(3){
-  transform: translateY(-70px) translateX(10px);
-
-}
-.domeoverlay a:nth-child(4){
-  transform: translateY(-35px) translateX(250px);
-
-}
-.domeoverlay a:nth-child(5){
-  transform: translateY(-10px) translateX(360px);
-
-}
-
-@media (max-width: 640px) {
-  .domeoverlay a:nth-child(1){
-    transform: translateY(-20px) translateX(-160px);
-  
-  }
-  .domeoverlay a:nth-child(2){
-    transform: translateY(-90px) translateX(-110px);
-  
-  }
-  .domeoverlay a:nth-child(3){
-    transform: translateY(-110px) translateX(7px);
-  
-  }
-  .domeoverlay a:nth-child(4){
-    transform: translateY(-85px) translateX(110px);
-  
-  }
-  .domeoverlay a:nth-child(5){
-    transform: translateY(-20px) translateX(160px);
-  
-  }
-}
-
-
-.project:hover img{
-  transform: scale(1.1) ;
-  transition: 300ms ease-in-out;
-
-
-}
-
-.project:hover h1{
-  transform: scale(0.9) ;
-  background-color: #2b5592;
-  transition: 250ms ease-in-out;
-  padding: 9px;
-  border-radius: 5px;
-  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  color: white;
-
-}

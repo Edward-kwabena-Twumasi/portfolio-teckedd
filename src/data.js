@@ -7,6 +7,17 @@ import {FaDatabase} from "react-icons/fa"
 import {BiData} from "react-icons/bi"
 import {BiCloud} from "react-icons/bi"
 import {FaAppStore} from "react-icons/fa"
+import electionHuburl from "./assets/electionhub.PNG";
+import treckTrafficUrl from "./assets/trecktraffic.PNG";
+import phishingurl from "./assets/phishing_detect.png";
+import cnnurl from "./assets/cnn_classify.jpeg";
+import rnnurl from "./assets/rnn_text.png";
+import ecommerceurl from "./assets/ecommerce.png";
+import travelmates from "./assets/travelmates.png";
+import stocktakingurl from "./assets/stock-tacking.png";
+import smartfarmUrl from "./assets/smart-farming.png";
+import notesUrl from "./assets/notes.png";
+
 
 
 
@@ -179,3 +190,42 @@ export const beskilllevels=[
     },
 
 ];
+
+export const projects=[
+  {
+    "title":"Automated Data Archiver",
+    "description":"An automated traffic data archiving system",
+    "completed":true,
+    "image":treckTrafficUrl
+  },
+  {
+    "title":"Election Info System",
+    "description":"A platform for relieable election information",
+    "completed":true,
+    "image":electionHuburl
+  },
+  {
+    "title":"Stock Taking Application",
+    "description":"A stock taking app built for a client",
+    "completed":true,
+    "image":stocktakingurl
+  },
+  {
+    "title":"E-Commerce website",
+    "description":"A platform for selling organic foods with payment integration",
+    "completed":true,
+    "image":ecommerceurl
+  },
+  {
+    "title":"Notes-taking app",
+    "description":"A minimalistic app for notes taking with cool features",
+    "completed":true,
+    "image":notesUrl
+  },
+  {
+    "title":"Integrated ticketing system",
+    "description":"Book bus,flight and train all on one intelligent platform",
+    "completed":true,
+    "image":travelmates
+  }
+]
