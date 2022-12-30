@@ -44,6 +44,61 @@ height: 9%;
   margin-top: 6%;
 
 }
+.parent{
+  position: relative;
+width: 300.95px;
+height: 455px;
+
+}
+.base{
+  
+position: relative;
+width: 300px;
+height: 100%;
+background-color: bisque;
+border-radius: 12px;
+}
+.image{
+  position: absolute;
+width: 320px;
+height: 193px;
+top: 45px;
+transform: translateX(-80px);
+border-radius: 8px;
+z-index: 7;
+border: 4px solid rgb(233, 138, 23);
+}
+.description{
+  position: absolute;
+width: 280px;
+top: 200px;
+height: auto;
+padding: 10px;
+color: rgb(233, 138, 23);
+background-color: beige;
+border-radius: 8px;
+transform: rotate(2deg) translateX(40px);
+z-index: 8;
+}
+.stack{
+  position: absolute;
+width: 250.71px;
+height: auto;
+padding: 10px;
+top: 270px;
+background: rgb(233, 138, 23);
+border-radius: 8px;
+transform: rotate(-3deg) translateX(-40px);
+z-index: 6;
+}
+.actions{
+  bottom: 5px;
+}
+.actions button{
+  padding: 4px;
+  border-radius: 5px;
+  border: 1px rgba(0, 0, 0, 0.004);
+}
 .default-color{
   background-color: #2b5592;
 }
