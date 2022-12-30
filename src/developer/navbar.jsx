@@ -10,9 +10,9 @@ const NavBar=()=>{
               </div>
               <div className='flex justify-around gap-7 float-right'>
                 
-                <button className="font-bold text-[#2b5592]"><Link to='/'>About</Link></button> 
+                <button className="font-bold"><Link to='/'>About</Link></button> 
                 <button ><Link to='skills'>Skills</Link></button> 
-                <button className='text-pink-800'><Link to='projects'>Projects</Link> </button> 
+                <button className=''><Link to='projects'>Projects</Link> </button> 
                 <button ><Link to='contact'>Contact</Link></button> 
               </div> 
        </div>

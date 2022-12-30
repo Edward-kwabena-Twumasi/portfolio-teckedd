@@ -5,6 +5,10 @@ import {FaCss3} from "react-icons/fa"
 import {BiTestTube} from "react-icons/bi"
 import {FaDatabase} from "react-icons/fa"
 import {BiData} from "react-icons/bi"
+import {BiCloud} from "react-icons/bi"
+import {FaAppStore} from "react-icons/fa"
+
+
 
 
 
@@ -51,13 +55,13 @@ export const beskills=[
   
      },
      {
-       "icon":<FaCss3/>,
+       "icon":<FaAppStore/>,
        "title":"RESTful api development",
        "description":"Develop custom apis for applications to work with data efficiently"
   
      },
      {
-       "icon":<BiTestTube/>,
+       "icon":<BiCloud/>,
        "title":"Cloud and DevOps",
        "description":"Containerize apps, deploy to the cloud and use agile technologies to speed up development"
   
