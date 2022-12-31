@@ -6,7 +6,7 @@ const ProjectCard=({image,title,description})=>{
         <div className="parent pt-5 mb-5">
             <div className="base p-4 pt-2 flex flex-col" >
                 <h3 className="font-semibold text-lg m-1">{title}</h3>
-                <section className="image" style={{background:`url(${img})`,backgroundSize:"cover"}}>
+                <section className="image" style={{backgroundImage:`url(${img})`,backgroundSize:"cover"}}>
 
                 </section>  
                 <section className="description text-white text-lg">

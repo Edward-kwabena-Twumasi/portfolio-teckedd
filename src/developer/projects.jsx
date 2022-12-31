@@ -1,5 +1,4 @@
 import { useRef,useState,useEffect } from 'react';
-
 import 'animate.css';
 import '../App.css'
 import { Link } from 'react-router-dom';
@@ -10,17 +9,23 @@ import {projects} from "../data.js"
 
 
 const Projects=()=>{
-
+    
+    const [index,setIndex]=useState(0)
+    let styles=["border-2",""]
+    let projectComplete=[true,false]  
     const myRef = useRef(null);
+    const handleClick=(newIndex)=>{
+        setIndex(newIndex)
+      }
     
     useEffect(() => {
         // ✅ You can read or write refs in effects
        const projects= myRef.current;
-       const allProjects = projects.querySelectorAll('div > div ')
+       const allProjects = projects.querySelectorAll('div > div >div')
        let options = {
         root: null,
         rootMargin: '0px',
-        threshold: 0.3
+        threshold: 0.6
       }
       
       let observer = new IntersectionObserver((entries)=>{
@@ -41,7 +46,7 @@ const Projects=()=>{
         if (i) {
           setTimeout(() => {
             observer.observe(i);
-          }, j*30);  
+          }, j*40);  
             return () => observer.unobserve(i)
          
            
@@ -52,11 +57,7 @@ const Projects=()=>{
 
       },[]);
 
-      const [index,setIndex]=useState(0)
-      let styles=["border-2",""]
-      const handleClick=(newIndex)=>{
-        setIndex(newIndex)
-      }
+      
 
       return (
         <div  className="projects page flex flex-col  w-full h-full" >
@@ -67,7 +68,7 @@ const Projects=()=>{
 
           </div>
           <div ref={myRef} className="overflow-scroll hide-scroll">
-              <ProjectList projects={projects}/>
+              <ProjectList projects={projects.filter(project=>project.completed===projectComplete[index])}/>
           </div>
        
 

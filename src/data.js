@@ -201,13 +201,13 @@ export const projects=[
   {
     "title":"Election Info System",
     "description":"A platform for relieable election information",
-    "completed":true,
+    "completed":false,
     "image":electionHuburl
   },
   {
     "title":"Stock Taking Application",
     "description":"A stock taking app built for a client",
-    "completed":true,
+    "completed":false,
     "image":stocktakingurl
   },
   {

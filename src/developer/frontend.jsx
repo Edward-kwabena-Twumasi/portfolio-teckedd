@@ -52,7 +52,7 @@ useEffect(() => {
     if (i) {
       setTimeout(() => {
         observer.observe(i);
-      }, j*40);  
+      }, j*50);  
         return () => observer.unobserve(i)
      
        
@@ -62,7 +62,7 @@ useEffect(() => {
     if (i) {
       setTimeout(() => {
         observer1.observe(i);
-      }, j*35);  
+      }, j*60);  
         return () => observer1.unobserve(i)
      
        

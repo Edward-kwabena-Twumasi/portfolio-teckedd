@@ -26,7 +26,7 @@ const Backend=()=>{
         entries.forEach((entry,idx) => {
             // entry.target.classList.toggle('animate_animated',entry.isIntersecting)
            
-                entry.target.classList.toggle('animateIn',entry.isIntersecting)
+                entry.target.classList.toggle('slideIn',entry.isIntersecting)
               
             if (entry.intersectionRatio>0.7) {
                observer.unobserve(entry.target);
@@ -38,7 +38,7 @@ const Backend=()=>{
         entries.forEach((entry,idx) => {
             // entry.target.classList.toggle('animate_animated',entry.isIntersecting)
            
-                entry.target.classList.toggle('slideIn',entry.isIntersecting)
+                entry.target.classList.toggle('animateIn',entry.isIntersecting)
               
             if (entry.intersectionRatio>0.7) {
                observer.unobserve(entry.target);
@@ -52,7 +52,7 @@ const Backend=()=>{
         if (i) {
           setTimeout(() => {
             observer.observe(i);
-          }, j*40);  
+          }, j*50);  
             return () => observer.unobserve(i)
          
            
@@ -62,7 +62,7 @@ const Backend=()=>{
         if (i) {
           setTimeout(() => {
             observer1.observe(i);
-          }, j*35);  
+          }, j*40);  
             return () => observer1.unobserve(i)
          
            

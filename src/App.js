@@ -1,7 +1,7 @@
 import './App.css';
 import About from './developer/about';
 import Projects from './developer/projects';
-import { useRef,useState,useEffect } from 'react';
+import { useRef,useState } from 'react';
 import Contact from './developer/contact';
 import NavBar from './developer/navbar';
 import Skills from './developer/skills';
@@ -26,14 +26,12 @@ import {FaPhone} from "react-icons/fa"
 
 
 function App() {
-  const [page,setPage]=useState(0);
   const aboutRef = useRef(null);
-  const projectsRef = useRef(null);
   const skillsRef = useRef(null);
 
  
   const [index,setIndex]=useState(0)
-  let styles=["border-4","border-2","border-2","border-2"]
+  let styles=["border-4 shadow-2xl","","",""]
   const handleClick=(newIndex)=>{
     setIndex(newIndex)
   }

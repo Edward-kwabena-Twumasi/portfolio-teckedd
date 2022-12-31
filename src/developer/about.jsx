@@ -1,6 +1,6 @@
-import background from "../assets/cleareddimg.png";
+import edward from "../assets/edward.png";
 import 'animate.css';
-import { useRef,useEffect, forwardRef } from 'react';
+import {  forwardRef } from 'react';
 import '../App.css'
 import { Link } from "react-router-dom";
 
@@ -9,41 +9,7 @@ import { Link } from "react-router-dom";
 const About=forwardRef((props,ref)=>{
 
    
-    // useEffect(() => {
-    //     // ✅ You can read or write refs in effects
-    //    const about= ref.current;     
-  
-    //   let animateContent=about.querySelectorAll('h1')
-    //   let aboutOptions = {
-    //     root: null,
-    //     rootMargin: '0px',
-    //     threshold: 0.0
-    //   }
-       
-    //   //obsserve skills ref
-    //   let aboutObserver = new IntersectionObserver((entries)=>{
-    //     entries.forEach((entry) => {
-    //         // entry.target.classList.toggle('animate_animated',entry.isIntersecting)
-    //           entry.target.classList.toggle('animateSkills',entry.isIntersecting)
-             
-    //         if (entry.isIntersecting) {
-    //             aboutObserver.observe(entry.target);
-    //         }
-    //         // else
-    //         // aboutObserver.unobserve(entry.target);
-            
-           
-    //       });
-    //   }, aboutOptions);
-  
-    //   animateContent.forEach(j=>{
-    //     if (j) {
-    //         aboutObserver.observe(j);
-    //         // return () => aboutObserver.unobserve(j)
-    //     }
-    //   })
-  
-    //   },[]);
+    
   
 
     return(
@@ -61,6 +27,7 @@ const About=forwardRef((props,ref)=>{
                 >
                     <div className=" lg:w-[240px] lg:h-[240px] self-center rounded-full  bg-no-repeat 
                     bg-start bg-cover  border-solid bg-[#ffe4c4] shadow-xl"
+                    style={{backgroundImage:`url(${edward})`,backgroundSize:"cover",backgroundPosition:"center"}}
                     >
                         
                     </div> 
@@ -69,12 +36,11 @@ const About=forwardRef((props,ref)=>{
                 <div className="text flex flex-col p-2">
                    <h1 className="role text-white mt-5 font-bold">Full stack software engineer</h1>
                    <h1 className="text-white font-extrabold lg:text-3xl text-xl self-start mt-6 
-                     duration-200 animate__animated animate__bounce animate__bounceInRight animate__slow">TeckEdd
+                     duration-200 animate__animated animate__bounce animate__bounceInRight animate__slow">Edward Twumasi
                      </h1>
                     
                     <p className="summary text-white text-md mt-4 max-w-lg">
-                        Edward is a computer science graduate, an AI enthusiat and a highly motivated and passion driven individual.
-                        He loves to learn and improve and aspires to own a Tech Company in the near future.
+                        I love to programming becuase it is what give life to technological ideas. Kudos to all developers out there
 
                     </p>
                     <div className="flex gap-6 mt-5">

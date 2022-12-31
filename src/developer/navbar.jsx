@@ -8,7 +8,7 @@ const NavBar=({onNavChange,index})=>{
     return (
         <div className="nav w-full flex gap-20  lg:p-4 p-2  bg-slate-700  mb-0 fixed text-white z-50">
               <div className='flex justify-start w-1/2'>
-                <h1 className='font-bold '>TeckEdd</h1>
+                <h1 className='font-bold '>Eddie's Portfolio</h1>
               </div>
               <div className='flex justify-around gap-7 float-right'>
                 
