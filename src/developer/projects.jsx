@@ -16,41 +16,38 @@ const Projects=()=>{
     useEffect(() => {
         // ✅ You can read or write refs in effects
        const projects= myRef.current;
-       const allProjects = projects.querySelectorAll('div > div > div > img')
-       const allProjectsDesc = projects.querySelectorAll('div > div > div > h1')
+       const allProjects = projects.querySelectorAll('div > div ')
        let options = {
         root: null,
         rootMargin: '0px',
-        threshold: 0.2
+        threshold: 0.3
       }
       
       let observer = new IntersectionObserver((entries)=>{
-        entries.forEach((entry) => {
+        entries.forEach((entry,idx) => {
             // entry.target.classList.toggle('animate_animated',entry.isIntersecting)
-            entry.target.classList.toggle('animateIn',entry.isIntersecting)
-            if (entry.isIntersecting) {
-                // console.log( entry.target.getAttribute("id"))
-                observer.unobserve(entry.target);
-                // entry.target.classList.toggle('animate-bounce',entry.isIntersecting)
-            }
-
            
+                entry.target.classList.toggle('animateIn',entry.isIntersecting)
+              
+            if (entry.intersectionRatio>0.7) {
+               observer.unobserve(entry.target);
+            }
            
           });
       }, options);
 
-      allProjects.forEach(i=>{
+
+      allProjects.forEach((i,j)=>{
         if (i) {
+          setTimeout(() => {
             observer.observe(i);
+          }, j*30);  
             return () => observer.unobserve(i)
+         
+           
         }
       })
-      allProjectsDesc.forEach(j=>{
-        if (j) {
-            observer.observe(j);
-            return () => observer.unobserve(j)
-        }
-      })
+      
       
 
       },[]);
@@ -62,16 +59,16 @@ const Projects=()=>{
       }
 
       return (
-        <div ref={myRef} className="projects page flex flex-col  w-full h-full" >
+        <div  className="projects page flex flex-col  w-full h-full" >
 
-         <div className="flex gap-6 mt-5 justify-center m-2">
-                    <button className= {`text-white rounded-full p-2 px-6 border-white  ${styles[index]}` } onClick={()=>handleClick(0)}><Link to='completed'>Completed</Link> </button> 
-                    <button className={`text-white rounded-full p-2 px-6 border-white ${styles[1-index]}` } onClick={()=>handleClick(1)}><Link to='ongoing'>Ongoing</Link> </button> 
+          <div className="flex gap-6 mt-5 justify-center m-2">
+              <button className= {`text-white rounded-full p-2 px-6 border-white  ${styles[index]}` } onClick={()=>handleClick(0)}><Link to='completed'>Completed</Link> </button> 
+              <button className={`text-white rounded-full p-2 px-6 border-white ${styles[1-index]}` } onClick={()=>handleClick(1)}><Link to='ongoing'>Ongoing</Link> </button> 
 
-         </div>
-         <div className="overflow-scroll hide-scroll">
-         <ProjectList projects={projects}/>
-         </div>
+          </div>
+          <div ref={myRef} className="overflow-scroll hide-scroll">
+              <ProjectList projects={projects}/>
+          </div>
        
 
         </div> 

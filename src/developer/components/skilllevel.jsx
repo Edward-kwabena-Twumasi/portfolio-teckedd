@@ -1,8 +1,8 @@
 
-const SkillLevel=({title,level})=>{
+const SkillLevel=({title,level,index})=>{
     const val=level;
     return (
-        <div className="tile w-[500px] h-auto flex flex-col text-white m-3 p-4 rounded-md" >
+        <div className="level w-[500px] h-auto flex flex-col text-white m-3 p-4 rounded-md" key={index}>
             <div className="flex justify-between gap-5 h-6 w-full">
                 <div className="title font-bold">
                 {title}

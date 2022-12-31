@@ -57,8 +57,13 @@ const About=forwardRef((props,ref)=>{
             <div className="page lg:flex md:flex w-full justify-start gap-7 ml-7 ">
                 
                 <div className="photo lg:w-[300px] lg:h-[300px] self-center rounded-full  bg-no-repeat border-4
-                bg-start bg-cover mr-7  border-solid border-[#ffe4c4] p-6"
+                bg-start bg-cover mr-7  border-solid border-[#ffe4c4] p-6 flex flex-col justify-center"
                 >
+                    <div className=" lg:w-[240px] lg:h-[240px] self-center rounded-full  bg-no-repeat 
+                    bg-start bg-cover  border-solid bg-[#ffe4c4] shadow-xl"
+                    >
+                        
+                    </div> 
                 </div> 
                
                 <div className="text flex flex-col p-2">
