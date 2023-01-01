@@ -76,7 +76,7 @@ useEffect(() => {
     return (
         <div ref={myRef} className="flex flex-col pl-14 h-full">
             <h1 className="title text-3xl text-white font-bold m-3">Front end skills</h1>
-            <div className="lg:flex justify-between flex-col">
+            <div className="flex justify-between">
                 <div>
                 {
                 skills.map((skill,idx)=>{

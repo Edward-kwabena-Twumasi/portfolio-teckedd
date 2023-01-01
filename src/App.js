@@ -93,10 +93,10 @@ function App() {
               </div>
           </div>
 
-          <div className=' rounded-lg lg:h-full overflow-scroll lg:w-11/12 lg:content hide-scroll w-screen h-screen'>
+          <div className=' rounded-lg lg:h-full overflow-scroll lg:w-11/12 content hide-scroll w-screen h-screen'>
            
                  <NavBar onNavChange={handleClick} index={index}/> 
-                 <div className='lg:content-body bg-slate-600 rounded-lg shadow-xl w-screen h-screen'>
+                 <div className='content-body bg-slate-600 rounded-lg shadow-xl w-screen h-screen'>
                   <Routes>
                     <Route exact path="/"  element={<About ref={aboutRef} />}></Route>           
                     {/* <Route exact path="/about" element={<About/>}></Route> */}
