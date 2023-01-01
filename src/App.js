@@ -28,9 +28,12 @@ import {FaPhone} from "react-icons/fa"
 function App() {
   const aboutRef = useRef(null);
   const skillsRef = useRef(null);
+  // window.alert(window.location.pathname)
+  const pathNames=["/","/skills","/projects","/contact"]
 
- 
-  const [index,setIndex]=useState(0)
+  console.log(pathNames.indexOf(window.location.pathname))
+  let currentIndex=pathNames.indexOf(window.location.pathname);
+  const [index,setIndex]=useState(currentIndex)
   let styles=["border-4 shadow-2xl","","",""]
   const handleClick=(newIndex)=>{
     setIndex(newIndex)
