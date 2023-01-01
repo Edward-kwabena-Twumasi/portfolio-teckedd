@@ -102,7 +102,7 @@ function App() {
               </div>
           </div>
 
-          <div className='main rounded-lg lg:h-full overflow-scroll lg:w-11/12 content hide-scroll  '>
+          <div className='rounded-lg lg:h-full overflow-scroll lg:w-11/12 w-full content hide-scroll  '>
            
                  <NavBar onNavChange={handleClick} index={index}/> 
                  <div className='content-body  bg-slate-600 rounded-lg shadow-xl '>

@@ -94,34 +94,28 @@ height: 9.5%;
 @media (max-width: 640px) {
  .content {
       margin-left: 0px;
-      width: 100%;
       padding-top: 5px;
   }
   .content-body{
     height: 100%;
     width: 100%;
-    margin-top: 2%;
     font-size: 10px;
-    
-  }
-  .about{
-    padding: 12px;
-    /* background-color: red; */
-  }
+ }
+  
 }
 
 /* project card styles */
 .parent{
   position: relative;
-width: 300.95px;
+width: 300px;
 height: 455px;
 
 }
 .base{
   
 position: relative;
-width: 300px;
-height: 455px;
+width: 290px;
+height: 395px;
 background-color: #ffe4c4;
 border-radius: 12px;
 }
@@ -138,14 +132,14 @@ border: 4px solid rgb(233, 138, 23);
 }
 .description{
   position: absolute;
-width: 280px;
+width: 270px;
 top: 200px;
 height: auto;
 padding: 10px;
 color: rgb(233, 138, 23);
 background-color: beige;
 border-radius: 8px;
-transform: rotate(2deg) translateX(40px);
+transform: rotate(2deg) translateX(35px);
 animation: fadeIn 400ms ease-in-out;
 z-index: 8;
 }

@@ -2,22 +2,16 @@ import edward from "../assets/edward.png";
 import 'animate.css';
 import {  forwardRef } from 'react';
 import '../App.css'
-import { Link,useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 
 const About=forwardRef((props,ref)=>{
 
-   const location=useLocation()
-   console.log(location.pathname)
-
     return(
-        
-        
-        <div className="about h-full flex flex-col justify-center  p-4 items-start 
-        " ref={ref}>
-            
-            
+              
+        <div className="about h-full flex flex-col justify-center overflow-hidden items-start 
+        " ref={ref}>          
 
             <div className=" lg:flex md:flex w-full justify-start gap-7 ml-7 ">
                 
@@ -27,8 +21,7 @@ const About=forwardRef((props,ref)=>{
                     <div className=" lg:w-[240px] w-[170px] lg:h-[240px] h-[170px] self-center rounded-full  bg-no-repeat 
                     bg-start bg-cover  border-solid bg-[#ffe4c4] shadow-xl"
                     style={{backgroundImage:`url(${edward})`,backgroundSize:"cover",backgroundPosition:"center"}}
-                    >
-                        
+                    >                  
                     </div> 
                 </div> 
                
@@ -39,7 +32,7 @@ const About=forwardRef((props,ref)=>{
                      </h1>
                     
                     <p className="summary text-white text-md mt-4 w-2/3">
-                        I love programming because it is what gives life to technological ideas
+                        I love programming because it is what gives life to technological ideas.
                          I am a passionate, highly motivated and progressive individual 
                          with great social skills. I can rap too 😊🎤
 
@@ -48,12 +41,9 @@ const About=forwardRef((props,ref)=>{
                     <button className='text-white rounded-full p-2 px-6 border-white border-2'><Link to='projects'>Projects</Link> </button> 
                     <button className='text-white rounded-full p-2 px-6 border-white border-2'><Link to='contact'>Contact</Link> </button> 
 
-                    </div>
-                </div>
-                
-            </div>
-            
-                
+                   </div>
+                </div>              
+            </div>              
         </div>
         
     );
