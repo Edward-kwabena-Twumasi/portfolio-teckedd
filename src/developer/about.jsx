@@ -48,7 +48,7 @@ const About=forwardRef((props,ref)=>{
                     <button className='text-white rounded-full p-2 px-6 border-white border-2'><Link to='contact'>Contact</Link> </button> 
 
                     </div>
-                
+                    <h1 className="lg:hidden text-white mt-5 font-bold block self-center text-start">I look good on your desktop, trust me. I will be mobile responsive soon</h1>
                 </div>
                 
             </div>
