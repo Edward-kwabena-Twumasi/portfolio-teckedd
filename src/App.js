@@ -30,9 +30,15 @@ function App() {
   const skillsRef = useRef(null);
   // window.alert(window.location.pathname)
   const pathNames=["/","/skills","/projects","/contact"]
-
-  console.log(pathNames.indexOf(window.location.pathname))
   let currentIndex=pathNames.indexOf(window.location.pathname);
+  if (currentIndex<0) {
+    if (window.location.pathname.includes("/skills")) {
+      currentIndex=1
+    } else if (window.location.pathname.includes("/projects")) {
+      currentIndex=2
+    }
+  }
+
   const [index,setIndex]=useState(currentIndex)
   let styles=["border-4 shadow-2xl","","",""]
   const handleClick=(newIndex)=>{
