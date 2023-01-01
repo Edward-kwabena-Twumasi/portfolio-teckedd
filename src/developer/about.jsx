@@ -40,7 +40,7 @@ const About=forwardRef((props,ref)=>{
                      </h1>
                     
                     <p className="summary text-white text-md mt-4 max-w-lg">
-                        I love programming becuase it is what gives life to technological ideas. I am a passionate, highly motivated and progressive induvidual with great social skills. I can rap too 😊🎤
+                        I love programming because it is what gives life to technological ideas. I am a passionate, highly motivated and progressive individual with great social skills. I can rap too 😊🎤
 
                     </p>
                     <div className="flex gap-6 mt-5">
