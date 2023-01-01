@@ -76,7 +76,7 @@ useEffect(() => {
     return (
         <div ref={myRef} className="flex flex-col pl-14 h-full">
             <h1 className="title text-3xl text-white font-bold m-3">Front end skills</h1>
-            <div className="flex justify-between ">
+            <div className="lg:flex justify-between flex-col">
                 <div>
                 {
                 skills.map((skill,idx)=>{
@@ -85,7 +85,7 @@ useEffect(() => {
                 })
                 }
                 </div>
-                <div>
+                <div className="self-start">
                 {
                 skilllevels.map((skilllevel,idx)=>{
                     return  <SkillLevel  title={skilllevel.title} level={skilllevel.level} index={idx}> 

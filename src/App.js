@@ -78,7 +78,7 @@ function App() {
         
         <div className='flex w-screen h-screen'>
            <Router> 
-          <div className='sidenav h-full w-1/12 bg-slate-700 fixed border-pink-500 z-50 lg:flex flex-col justify-center gap-5  hidden'>
+          <div className='sidenav h-full w-1/12 bg-slate-700 fixed border-pink-500 z-50 lg:flex lg:flex-col justify-center gap-5  hidden'>
               <div className={`border-[#ffe4c4] w-[60px] h-[60px] rounded-full self-center ease-switch flex flex-col justify-center text-white text-3xl  ${styles[index]}`} onClick={()=>handleClick(0)}>
               <Link className='self-center' to="/"><GoPerson /></Link> 
               </div>
@@ -93,10 +93,10 @@ function App() {
               </div>
           </div>
 
-          <div className=' rounded-lg h-full overflow-scroll w-11/12 content hide-scroll'>
+          <div className=' rounded-lg lg:h-full overflow-scroll lg:w-11/12 lg:content hide-scroll w-screen h-screen'>
            
                  <NavBar onNavChange={handleClick} index={index}/> 
-                 <div className='content-body bg-slate-600 rounded-lg shadow-xl'>
+                 <div className='lg:content-body bg-slate-600 rounded-lg shadow-xl w-screen h-screen'>
                   <Routes>
                     <Route exact path="/"  element={<About ref={aboutRef} />}></Route>           
                     {/* <Route exact path="/about" element={<About/>}></Route> */}
