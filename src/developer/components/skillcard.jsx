@@ -2,7 +2,7 @@
 
 const SkillCard=({icon,title,body,index})=>{
     return (
-        <div className="tile w-[400px] h-auto flex flex-col text-white m-3 bg-slate-500 p-4 rounded-md" key={index}>
+        <div className="tile lg:w-[400px] w-[290px] h-auto flex flex-col text-white m-3 bg-slate-500 p-4 rounded-md" key={index}>
             <section className="flex gap-5 h-6 w-full">
                 <div className="leading">
                 {icon}

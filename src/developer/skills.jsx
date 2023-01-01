@@ -81,7 +81,7 @@ useEffect(() => {
     return (
        <div className="skills page flex flex-col h-full " ref={ref}>
         
-                <div className="flex gap-6 mt-5 justify-center">
+                <div className="flex gap-6 lg:mt-5 mt-20 justify-center">
                     <Link onClick={()=>handleClick(0)} to='frontend'><button className= {`text-white rounded-full p-2 px-6 border-white  ${styles[index]}` } onClick={()=>handleClick(0)}>Frontend </button></Link>
                     <Link onClick={()=>handleClick(1)} to='backend'> <button className={`text-white rounded-full p-2 px-6 border-white ${styles[1-index]}` } onClick={()=>handleClick(1)}>Backend</button> </Link>
 

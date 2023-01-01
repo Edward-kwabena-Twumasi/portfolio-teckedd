@@ -76,7 +76,7 @@ const Backend=()=>{
     return (
         <div ref={myRef} className="flex flex-col pl-14 h-full">
             <h1 className="title text-3xl text-white font-bold m-3">Back end skills</h1>
-            <div className="flex justify-between">
+            <div className="lg:flex justify-between">
                 <div>
                 {
                 beskills.map((skill,idx)=>{

@@ -62,7 +62,7 @@ const Projects=()=>{
       return (
         <div  className="projects page flex flex-col  w-full h-full" >
 
-          <div className="flex gap-6 mt-5 justify-center m-2">
+          <div className="flex gap-6 lg:mt-5 mt-20 justify-center m-2">
               <button className= {`text-white rounded-full p-2 px-6 border-white  ${styles[index]}` } onClick={()=>handleClick(0)}><Link to='completed'>Completed</Link> </button> 
               <button className={`text-white rounded-full p-2 px-6 border-white ${styles[1-index]}` } onClick={()=>handleClick(1)}><Link to='ongoing'>Ongoing</Link> </button> 
 
