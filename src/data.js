@@ -127,6 +127,18 @@ export const skilllevels=[
 
 ];
 export const beskilllevels=[
+  {
+   
+    "title":".NET",
+    "level":"60%"
+
+     },
+     {
+   
+      "title":"C#",
+      "level":"70%"
+  
+       },
   
   {
    
@@ -140,18 +152,31 @@ export const beskilllevels=[
        "level":"90%"
   
      },
-     {
-      
-       "title":"Firebase",
-       "level":"90%"
-  
-     },
+     
      {
        
        "title":"Nodejs",
        "level":"80%"
   
      },
+     {
+       
+      "title":"RESTFUL APIS",
+      "level":"80%"
+ 
+    },
+    {
+   
+      "title":"KAFKA",
+      "level":"60%"
+  
+       },
+    {
+       
+      "title":"DOCKER",
+      "level":"70%"
+ 
+    },
      {
        
       "title":"Django",
@@ -165,17 +190,12 @@ export const beskilllevels=[
  
     },
     {
-       
-      "title":"RESTFUL APIS",
-      "level":"80%"
+      
+      "title":"Firebase",
+      "level":"90%"
  
     },
-    {
-       
-      "title":"DOCKER",
-      "level":"70%"
- 
-    },
+    
     {
        
       "title":"KUBERNETES",
