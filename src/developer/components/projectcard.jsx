@@ -19,7 +19,7 @@ const ProjectCard=({image,title,description,repo})=>{
                 </section>
                 <section className="actions flex gap-7 justify-around  w-4/5 absolute">
                     <button>Demo</button>
-                    <Link to={repo}><button>Github</button></Link> 
+                    <a target={"blank"} href={repo}><button>Github</button></a> 
                 </section>
             </div>
            
