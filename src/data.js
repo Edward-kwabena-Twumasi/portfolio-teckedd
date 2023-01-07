@@ -217,35 +217,41 @@ export const projects=[
     "description":"An automated traffic data archiving system",
     "completed":true,
     "image":treckTrafficUrl
+  , "github":"https://github.com/Edward-kwabena-Twumasi/Treck_Traffic"
   },
   {
     "title":"Election Info System",
     "description":"A platform for relieable election information",
     "completed":false,
     "image":electionHuburl
+  , "github":"https://github.com/Edward-kwabena-Twumasi/Election-Information-Website"
   },
   {
     "title":"Stock Taking Application",
     "description":"A stock taking app built for a client",
     "completed":false,
     "image":stocktakingurl
+  , "github":"https://github.com/Edward-kwabena-Twumasi/ruthjonatexcel"
   },
   {
     "title":"E-Commerce website",
     "description":"A platform for selling organic foods with payment integration",
     "completed":true,
     "image":ecommerceurl
+  , "github":"https://github.com/Edward-kwabena-Twumasi/"
   },
   {
     "title":"Notes-taking app",
     "description":"A minimalistic app for notes taking with cool features",
     "completed":true,
     "image":notesUrl
+  , "github":"https://github.com/Edward-kwabena-Twumasi/notes-manager"
   },
   {
     "title":"Integrated ticketing system",
     "description":"Book bus,flight and train all on one intelligent platform",
     "completed":true,
     "image":travelmates
+ , "github":"https://github.com/Edward-kwabena-Twumasi/"
   }
 ]

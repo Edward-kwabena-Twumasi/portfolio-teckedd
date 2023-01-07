@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 
 
-const ProjectCard=({image,title,description})=>{
+const ProjectCard=({image,title,description,repo})=>{
     const img=image;
     return (
         <div className="parent pt-5 mb-5">
@@ -18,7 +19,7 @@ const ProjectCard=({image,title,description})=>{
                 </section>
                 <section className="actions flex gap-7 justify-around  w-4/5 absolute">
                     <button>Demo</button>
-                    <button>Github</button>
+                    <Link to={repo}><button>Github</button></Link> 
                 </section>
             </div>
            
