@@ -1,4 +1,7 @@
  @import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap'); 
+ /* index.css or your stylesheet */
+
+
  *{
   box-sizing: border-box;
   scrollbar-width: 2px;
@@ -132,10 +135,10 @@ border: 4px solid rgb(233, 138, 23);
 }
 .description{
   position: absolute;
-width: 270px;
+width: 350px;
 top: 200px;
 height: auto;
-padding: 10px;
+padding: 14px;
 color: rgb(233, 138, 23);
 background-color: beige;
 border-radius: 8px;

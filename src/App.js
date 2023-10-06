@@ -18,6 +18,8 @@ import {FaWordpress} from "react-icons/fa"
 import {GoPerson} from "react-icons/go"
 import {GoTasklist} from "react-icons/go"
 import {FaPhone} from "react-icons/fa"
+import {FaCertificate} from "react-icons/fa"
+import Achievements from './developer/achievements';
 
 
 
@@ -29,7 +31,7 @@ function App() {
   const aboutRef = useRef(null);
   const skillsRef = useRef(null);
   // window.alert(window.location.pathname)
-  const pathNames=["/","/skills","/projects","/contact"]
+  const pathNames=["/","/skills","/projects","/achievements","/contact"]
   let currentIndex=pathNames.indexOf(window.location.pathname);
   if (currentIndex<0) {
     if (window.location.pathname.includes("/skills")) {
@@ -40,46 +42,10 @@ function App() {
   }
 
   const [index,setIndex]=useState(currentIndex)
-  let styles=["border-4 shadow-2xl","","",""]
+  let styles=["border-4 shadow-2xl","","","",""]
   const handleClick=(newIndex)=>{
     setIndex(newIndex)
   }
-
-  // useEffect(() => {
-  //     // ✅ You can read or write refs in effects
-  //    const about= aboutRef.current;     
-
-  //   let animateContent=about.querySelectorAll('h1')
-  //   let aboutOptions = {
-  //     root: null,
-  //     rootMargin: '0px',
-  //     threshold: 0.0
-  //   }
-     
-  //   //obsserve skills ref
-  //   let aboutObserver = new IntersectionObserver((entries)=>{
-  //     entries.forEach((entry) => {
-  //         // entry.target.classList.toggle('animate_animated',entry.isIntersecting)
-  //           entry.target.classList.toggle('animateSkills',entry.isIntersecting)
-           
-  //         if (entry.isIntersecting) {
-  //             aboutObserver.observe(entry.target);
-  //         }
-  //         // else
-  //         // aboutObserver.unobserve(entry.target);
-          
-         
-  //       });
-  //   }, aboutOptions);
-
-  //   animateContent.forEach(j=>{
-  //     if (j) {
-  //         aboutObserver.observe(j);
-  //         // return () => aboutObserver.unobserve(j)
-  //     }
-  //   })
-
-  //   },[]);
 
 
   return (
@@ -98,6 +64,9 @@ function App() {
               <Link className='self-center' to="/projects"><GoTasklist ></GoTasklist></Link>
               </div>
               <div className={`border-[#ffe4c4] w-[60px] h-[60px] rounded-full self-center ease-switch flex flex-col justify-center text-white text-3xl ${styles[Math.abs(3-index)]}`} onClick={()=>handleClick(3)}>
+              <Link className='self-center' to="/achievements"><FaCertificate ></FaCertificate></Link>
+              </div>
+              <div className={`border-[#ffe4c4] w-[60px] h-[60px] rounded-full self-center ease-switch flex flex-col justify-center text-white text-3xl ${styles[Math.abs(4-index)]}`} onClick={()=>handleClick(4)}>
               <Link className='self-center' to="/contact"><FaPhone ></FaPhone></Link>
               </div>
           </div>
@@ -121,6 +90,8 @@ function App() {
                      <Route index element={<ProjectList />} />          
                    
                     </Route>
+                    <Route path="/achievements" element={<Achievements/>}></Route>
+
                     <Route path="/contact" element={<Contact/>}></Route>
  
                 </Routes>

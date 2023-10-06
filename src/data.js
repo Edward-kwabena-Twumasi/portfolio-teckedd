@@ -17,7 +17,12 @@ import travelmates from "./assets/travelmates.png";
 import stocktakingurl from "./assets/stock-tacking.png";
 import smartfarmUrl from "./assets/smart-farming.png";
 import notesUrl from "./assets/notes.png";
+import pandas from "./assets/certs/pandas-cert.png";
+import intro_ml from "./assets/certs/intro-ml-cert.png";
+import interm_ml from "./assets/certs/interm-ml-cert.png";
 
+
+//import intro-ml from "./assets/certs/pandas-cert.png";
 
 
 
@@ -213,45 +218,87 @@ export const beskilllevels=[
 
 export const projects=[
   {
-    "title":"Automated Data Archiver",
-    "description":"An automated traffic data archiving system",
+    "title":<strong>DataArch</strong>,
+    "description":<p>An automated traffic data archiving tool
+       built on top of google's distance matrix and directions 
+       apis for <strong>transportation research</strong></p>,
     "completed":true,
     "image":treckTrafficUrl
   , "github":"https://github.com/Edward-kwabena-Twumasi/Treck_Traffic"
   },
   {
-    "title":"Election Info System",
-    "description":"A platform for relieable election information",
-    "completed":false,
-    "image":electionHuburl
-  , "github":"https://github.com/Edward-kwabena-Twumasi/Election-Information-Website"
-  },
-  {
-    "title":"Stock Taking Application",
-    "description":"A stock taking app built for a client",
-    "completed":false,
-    "image":stocktakingurl
-  , "github":"https://github.com/Edward-kwabena-Twumasi/ruthjonatexcel"
-  },
-  {
-    "title":"E-Commerce website",
-    "description":"A platform for selling organic foods with payment integration",
+    "title":<strong>Data Assistant</strong>,
+    "description":<p>A tool under development to automate 
+      <strong>data analysis, cleaning and preparation</strong> for <strong>ML</strong> tasks</p>,
     "completed":true,
-    "image":ecommerceurl
-  , "github":"https://github.com/Edward-kwabena-Twumasi/"
+    "image":treckTrafficUrl
+  , "github":"https://github.com/Edward-kwabena-Twumasi/Treck_Traffic"
   },
   {
-    "title":"Notes-taking app",
-    "description":"A minimalistic app for notes taking with cool features",
+    "title":<strong>RobuShield</strong>,
+    "description":<p> RobuShield: An Efficient and Robust AI Solution for Data Privacy on  Mobile Devicess</p>,
     "completed":true,
-    "image":notesUrl
+    "image":treckTrafficUrl
+  , "github":"https://github.com/Edward-kwabena-Twumasi/Treck_Traffic"
+  },
+  // {
+  //   "title":"Election Info System",
+  //   "description":"A platform for relieable election information",
+  //   "completed":false,
+  //   "image":electionHuburl
+  // , "github":"https://github.com/Edward-kwabena-Twumasi/Election-Information-Website"
+  // },
+  // {
+  //   "title":"Stock Taking Application",
+  //   "description":"A stock taking app built for a client",
+  //   "completed":false,
+  //   "image":stocktakingurl
+  // , "github":"https://github.com/Edward-kwabena-Twumasi/ruthjonatexcel"
+  // },
+  // {
+  //   "title":"E-Commerce website",
+  //   "description":"A platform for selling organic foods with payment integration",
+  //   "completed":true,
+  //   "image":ecommerceurl
+  // , "github":"https://github.com/Edward-kwabena-Twumasi/"
+  // },
+  {
+    "title":"Smart Farming with IoT and Deep Learning",
+    "description":<p>Collaborated on building a mobile app
+    which aids farmers detect weed, know soil moisture content and make informed decisions</p> ,
+    "completed":true,
+    "image":smartfarmUrl
   , "github":"https://github.com/Edward-kwabena-Twumasi/notes-manager"
   },
   {
     "title":"Integrated ticketing system",
-    "description":"Book bus,flight and train all on one intelligent platform",
+    "description":"Undergraduate research:Book bus,flight and train all on one intelligent platform",
     "completed":true,
     "image":travelmates
  , "github":"https://github.com/Edward-kwabena-Twumasi/"
   }
 ]
+
+export const certificates = [
+  {
+    name: 'Pandas',
+    description: 'Explore clean and prepare your data',
+    date: '2023',
+    issuer: 'Kaggle',
+    img: pandas
+  },
+  {
+    name: 'Intro To Ml',
+    description: 'Intro to ML',
+    date: '2023',
+    issuer: 'Kaggle',
+    img: intro_ml
+  },
+  {
+    name: 'Intermediate Ml',
+    description: 'Intermerdiate ML',
+    date: '2023',
+    issuer: 'Kaggle',
+    img: interm_ml
+  }
+];

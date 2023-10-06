@@ -7,7 +7,7 @@ import { useState } from 'react';
 import { BiHide } from 'react-icons/bi';
 
 const NavBar=({onNavChange,index})=>{
-  let styles=["font-bold text-[#ffe4c4] ","font-normal","font-normal","font-normal"]
+  let styles=["font-bold text-[#ffe4c4] ","font-normal","font-normal","font-normal","font-normal"]
 
   const [open,setOpen]=useState(false)
  const handleClick=()=>{
@@ -24,7 +24,8 @@ const NavBar=({onNavChange,index})=>{
                 <button className={`${styles[index]} ease-switch`} onClick={()=>onNavChange(0)}><Link to='/' >About</Link></button> 
                 <button className={`${styles[Math.abs(1-index)]} ease-switch`} onClick={()=>onNavChange(1)}><Link to='skills'>Skills</Link></button> 
                 <button className={`${styles[Math.abs(2-index)]} ease-switch`} onClick={()=>onNavChange(2)}><Link to='projects'>Projects</Link> </button> 
-                <button className={`${styles[Math.abs(3-index)]} ease-switch`}  onClick={()=>onNavChange(3)}><Link to='contact'>Contact</Link></button> 
+                <button className={`${styles[Math.abs(3-index)]} ease-switch`}  onClick={()=>onNavChange(3)}><Link to='achievements'>Achievements</Link></button> 
+                <button className={`${styles[Math.abs(4-index)]} ease-switch`}  onClick={()=>onNavChange(4)}><Link to='contact'>Contact</Link></button> 
               </div> 
               {
                 open?<div className='mobile-nav lg:hidden justify-around gap-7 flex flex-col absolute mt-16 p-7 w-[96%] rounded-md bg-slate-700 '>
@@ -32,7 +33,8 @@ const NavBar=({onNavChange,index})=>{
                 <button className={`${styles[index]} ease-switch`} onClick={()=>{onNavChange(0); setOpen()} }><Link to='/' >About</Link></button> 
                 <button className={`${styles[Math.abs(1-index)]} ease-switch`} onClick={()=>{onNavChange(1); setOpen()} }><Link to='skills'>Skills</Link></button> 
                 <button className={`${styles[Math.abs(2-index)]} ease-switch`} onClick={()=>{onNavChange(2); setOpen()} }><Link to='projects'>Projects</Link> </button> 
-                <button className={`${styles[Math.abs(3-index)]} ease-switch`}  onClick={()=>{onNavChange(3); setOpen()} }><Link to='contact'>Contact</Link></button> 
+                <button className={`${styles[Math.abs(3-index)]} ease-switch`}  onClick={()=>onNavChange(3)}><Link to='achievements'>Achievements</Link></button> 
+                <button className={`${styles[Math.abs(4-index)]} ease-switch`}  onClick={()=>{onNavChange(4); setOpen()} }><Link to='contact'>Contact</Link></button> 
               </div>:"" }
 
               <div className='lg:hidden flex justify-end w-1/2 pr-4 text-3xl' onClick={handleClick}>

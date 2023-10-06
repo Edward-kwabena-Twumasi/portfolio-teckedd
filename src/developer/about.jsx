@@ -26,16 +26,19 @@ const About=forwardRef((props,ref)=>{
                 </div> 
                
                 <div className="text flex flex-col p-2">
-                   <h1 className="role text-white mt-5 font-bold">Full stack software engineer</h1>
+                   <h1 className="role text-white mt-5 font-bold">Backend engineer @ <strong><a target={"blank"} href="https://hubtel.com">Hubtel Limited</a></strong></h1>
                    <h1 className="text-white font-extrabold lg:text-3xl text-xl self-start mt-6 
                      duration-200 animate__animated animate__bounce animate__bounceInRight animate__slow">Edward Twumasi
                      </h1>
                     
                     <p className="summary text-white text-md mt-4 w-2/3">
-                        I love programming because it is what gives life to technological ideas.
-                         I am a passionate, highly motivated and progressive individual 
-                         with great social skills. I can rap too 😊🎤
-
+                    I am a full stack software engineer proficient in C# and Dotnet, Javascript, python and several technologies.I 
+                    boast a robust foundation in computer science and AI.                     </p>
+                    <h1 className="role text-white mt-5 font-bold"><strong>Research Interests</strong></h1>
+                    <p className="summary text-white text-md mt-4 w-2/3">
+                    <div className="flex flex-row w-full justify-start gap-8">
+                    <span>Machine Learning</span><span>Computer Vision</span><span>NLP</span><span>CyberSecurity</span>
+                    </div>
                     </p>
                     <div className="flex gap-6 mt-5">
                     <button className='text-white rounded-full p-2 px-6 border-white border-2'><Link to='projects'>Projects</Link> </button> 
