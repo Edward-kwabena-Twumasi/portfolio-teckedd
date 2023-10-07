@@ -15,11 +15,18 @@ import rnnurl from "./assets/rnn_text.png";
 import ecommerceurl from "./assets/ecommerce.png";
 import travelmates from "./assets/travelmates.png";
 import stocktakingurl from "./assets/stock-tacking.png";
+import robuShield from "./assets/robushield.png";
 import smartfarmUrl from "./assets/smart-farming.png";
+import analyst from "./assets/data-analyst.png";
+
 import notesUrl from "./assets/notes.png";
 import pandas from "./assets/certs/pandas-cert.png";
+import nsmq from "./assets/certs/nsmq1.png";
+
 import intro_ml from "./assets/certs/intro-ml-cert.png";
 import interm_ml from "./assets/certs/interm-ml-cert.png";
+
+
 
 
 //import intro-ml from "./assets/certs/pandas-cert.png";
@@ -223,23 +230,27 @@ export const projects=[
        built on top of google's distance matrix and directions 
        apis for <strong>transportation research</strong></p>,
     "completed":true,
-    "image":treckTrafficUrl
-  , "github":"https://github.com/Edward-kwabena-Twumasi/Treck_Traffic"
+    "image":treckTrafficUrl,
+    "tags": <>
+      <span>Js </span><span>Python</span><span>Google maps api</span></>
+  , "github":"https://github.com/Edward-kwabena-Twumasi/google-directions-api"
   },
   {
     "title":<strong>Data Assistant</strong>,
-    "description":<p>A tool under development to automate 
-      <strong>data analysis, cleaning and preparation</strong> for <strong>ML</strong> tasks</p>,
-    "completed":true,
-    "image":treckTrafficUrl
-  , "github":"https://github.com/Edward-kwabena-Twumasi/Treck_Traffic"
+    "description":<p>A tool to automate 
+      <strong> data analysis, cleaning and preparation</strong> for <strong>ML</strong> tasks</p>,
+    "completed":false,
+    "image":analyst,
+    "tags": <><span>Python</span><span>Pandas</span><span>Streamlit</span></>
+  , "github":"https://github.com/Edward-kwabena-Twumasi/AI-LAB/tree/main/DataAnalysis"
   },
   {
     "title":<strong>RobuShield</strong>,
     "description":<p> RobuShield: An Efficient and Robust AI Solution for Data Privacy on  Mobile Devicess</p>,
-    "completed":true,
-    "image":treckTrafficUrl
-  , "github":"https://github.com/Edward-kwabena-Twumasi/Treck_Traffic"
+    "completed":false,
+    "image":robuShield,
+    "tags": <><span>AI</span><span>Computer Vision</span><span>Machine Learning</span><span>Research</span></>
+  , "github":"https://docs.google.com/document/d/10EjTnVJNmA7KDjaiYN8iRlLN6Ot2dhWk/edit#heading=h.gjdgxs"
   },
   // {
   //   "title":"Election Info System",
@@ -267,15 +278,18 @@ export const projects=[
     "description":<p>Collaborated on building a mobile app
     which aids farmers detect weed, know soil moisture content and make informed decisions</p> ,
     "completed":true,
-    "image":smartfarmUrl
+    "image":smartfarmUrl,
+    "tags": <><span>Flutter</span><span>IoT</span><span>PyTorch</span><span>Machine Learning</span></>
   , "github":"https://github.com/Edward-kwabena-Twumasi/notes-manager"
   },
   {
-    "title":"Integrated ticketing system",
-    "description":"Undergraduate research:Book bus,flight and train all on one intelligent platform",
+    "title":"TravelMate",
+    "description":"Integrated ticketing system.Book bus,flight and train all on one intelligent platform",
     "completed":true,
-    "image":travelmates
- , "github":"https://github.com/Edward-kwabena-Twumasi/"
+    "image":travelmates,
+    "tags": <><span>Flutter</span><span>Firebase</span><span>Research Project</span><span>Google maps api</span></>
+
+ , "github":"https://github.com/Edward-kwabena-Twumasi/TravelMate"
   }
 ]
 
@@ -300,5 +314,12 @@ export const certificates = [
     date: '2023',
     issuer: 'Kaggle',
     img: interm_ml
+  },
+  {
+    name: 'Science and Maths Quiz',
+    description: 'Quiz contestant award',
+    date: '2017',
+    issuer: 'Primetime,Ghana',
+    img: nsmq
   }
 ];

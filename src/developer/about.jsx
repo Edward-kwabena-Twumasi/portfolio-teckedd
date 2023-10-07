@@ -26,18 +26,18 @@ const About=forwardRef((props,ref)=>{
                 </div> 
                
                 <div className="text flex flex-col p-2">
-                   <h1 className="role text-white mt-5 font-bold">Backend engineer @ <strong><a target={"blank"} href="https://hubtel.com">Hubtel Limited</a></strong></h1>
+                   <h1 className="role text-white mt-5 font-bold">Backend engineer @ <strong><a target={"blank"} href="https://explore.hubtel.com/team/">Hubtel Limited</a></strong></h1>
                    <h1 className="text-white font-extrabold lg:text-3xl text-xl self-start mt-6 
                      duration-200 animate__animated animate__bounce animate__bounceInRight animate__slow">Edward Twumasi
                      </h1>
                     
                     <p className="summary text-white text-md mt-4 w-2/3">
-                    I am a full stack software engineer proficient in C# and Dotnet, Javascript, python and several technologies.I 
+                    I am a full stack software engineer proficient in C# and Dotnet, Javascript, python and several other technologies for building highly concurrent and scalable systems that serve multiple users. I 
                     boast a robust foundation in computer science and AI.                     </p>
                     <h1 className="role text-white mt-5 font-bold"><strong>Research Interests</strong></h1>
                     <p className="summary text-white text-md mt-4 w-2/3">
                     <div className="flex flex-row w-full justify-start gap-8">
-                    <span>Machine Learning</span><span>Computer Vision</span><span>NLP</span><span>CyberSecurity</span>
+                    <span>Machine Learning</span><span>Computer Vision</span><span>NLP</span><span>CyberSecurity</span><span>Software Engineering</span><span>Data Science</span>
                     </div>
                     </p>
                     <div className="flex gap-6 mt-5">
