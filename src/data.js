@@ -18,6 +18,7 @@ import stocktakingurl from "./assets/stock-tacking.png";
 import robuShield from "./assets/robushield.png";
 import smartfarmUrl from "./assets/smart-farming.png";
 import analyst from "./assets/data-analyst.png";
+import diab_classi from "./assets/diab-classi.png";
 
 import notesUrl from "./assets/notes.png";
 import pandas from "./assets/certs/pandas-cert.png";
@@ -34,6 +35,80 @@ import interm_ml from "./assets/certs/interm-ml-cert.png";
 
 
 
+export const aiskills=[
+  
+  {
+   "icon":<FaDatabase/>,
+   "title":"Machine learning",
+   "description":"Expertise in designing and implementing machine learning models for diverse applications.Proficient in algorithms such as regression, clustering, and neural networks.Skilled in optimizing models for performance and efficiency. "
+
+    },
+    {
+      "icon":<BiData/>,
+      "title":"Computer Vision",
+      "description":"Strong background in computer vision techniques and applications.Experience with image processing, object detection, and image recognition.Proven ability to develop vision algorithms for real-world scenarios."
+ 
+    },
+    {
+      "icon":<FaAppStore/>,
+      "title":"NLP (Natural Language Processing)",
+      "description":"Advanced proficiency in NLP for extracting insights from unstructured text data.Skilled in language modeling, sentiment analysis, and named entity recognition.Developed applications for text summarization and language translation."
+ 
+    },
+    {
+      "icon":<BiCloud/>,
+      "title":"Data Science",
+      "description":"Solid foundation in statistical analysis and data manipulation.Skilled in data cleaning, feature engineering, and exploratory data analysis.Experience in building and deploying data-driven solutions."
+ 
+    },
+
+];
+export const aiskilllevels = [
+  {
+    "title": "TensorFlow",
+    "level": "90%"
+  },
+  {
+    "title": "Python",
+    "level": "95%"
+  },
+  {
+    "title": "PyTorch",
+    "level": "40%"
+  },
+  {
+    "title": "Scikit-Learn",
+    "level": "80%"
+  },
+  {
+    "title": "Pandas",
+    "level": "85%"
+  },
+  {
+    "title": "OpenCV",
+    "level": "70%"
+  },
+  {
+    "title": "Natural Language Toolkit (NLTK)",
+    "level": "50%"
+  },
+  {
+    "title": "Keras",
+    "level": "75%"
+  },
+  {
+    "title": "Django",
+    "level": "70%"
+  },
+  {
+    "title": "Git",
+    "level": "90%"
+  },
+  {
+    "title": "Docker",
+    "level": "60%"
+  }
+];
 
 export const skills=[
   
@@ -63,35 +138,6 @@ export const skills=[
           },
 
 ];
-export const beskills=[
-  
-   {
-    "icon":<FaDatabase/>,
-    "title":"Database Design and Management",
-    "description":"Designing effective databases for data storage and retrieval"
-
-     },
-     {
-       "icon":<BiData/>,
-       "title":"Data fetching",
-       "description":"Fetching data from apis and existing databases for website"
-  
-     },
-     {
-       "icon":<FaAppStore/>,
-       "title":"RESTful api development",
-       "description":"Develop custom apis for applications to work with data efficiently"
-  
-     },
-     {
-       "icon":<BiCloud/>,
-       "title":"Cloud and DevOps",
-       "description":"Containerize apps, deploy to the cloud and use agile technologies to speed up development"
-  
-     },
-
-];
-
 export const skilllevels=[
   
   {
@@ -138,6 +184,35 @@ export const skilllevels=[
     },
 
 ];
+export const beskills=[
+  
+   {
+    "icon":<FaDatabase/>,
+    "title":"Database Design and Management",
+    "description":"Designing effective databases for data storage and retrieval"
+
+     },
+     {
+       "icon":<BiData/>,
+       "title":"Data fetching",
+       "description":"Fetching data from apis and existing databases for website"
+  
+     },
+     {
+       "icon":<FaAppStore/>,
+       "title":"RESTful api development",
+       "description":"Develop custom apis for applications to work with data efficiently"
+  
+     },
+     {
+       "icon":<BiCloud/>,
+       "title":"Cloud and DevOps",
+       "description":"Containerize apps, deploy to the cloud and use agile technologies to speed up development"
+  
+     },
+
+];
+
 export const beskilllevels=[
   {
    
@@ -235,6 +310,8 @@ export const beskilllevels=[
 
 ];
 
+
+
 export const projects=[
   {
     "title":<strong>DataArch</strong>,
@@ -292,7 +369,15 @@ export const projects=[
     "completed":true,
     "image":smartfarmUrl,
     "tags": <><span>Flutter</span><span>IoT</span><span>PyTorch</span><span>Machine Learning</span></>
-  , "github":"https://github.com/Edward-kwabena-Twumasi/notes-manager"
+  , "github":"https://github.com/devkyle4/Smart_Farming_App"
+  },
+  {
+    "title":"Diabetes Classification",
+    "description":<p>A fun ML project for diabetes Classification using the <strong>Pima Indians Dataset</strong> from Kaggle</p> ,
+    "completed":true,
+    "image":diab_classi,
+    "tags": <><span>Tensorflow</span><span>Keras</span><span>Diabetes</span><span>Classification</span><span>Machine Learning</span></>
+  , "github":"https://github.com/Edward-kwabena-Twumasi/AI-LAB/tree/main/Notebooks"
   },
   {
     "title":"TravelMate",

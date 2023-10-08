@@ -1,7 +1,7 @@
 
 import SkillCard from "./components/skillcard"
-import {beskills} from "../data.js"
-import {beskilllevels} from "../data.js"
+import {aiskills} from "../data.js"
+import {aiskilllevels} from "../data.js"
 import SkillLevel from "./components/skilllevel"
 import { useEffect,useRef } from 'react';
 
@@ -79,7 +79,7 @@ const AISkills=()=>{
             <div className="lg:flex justify-around">
                 <div>
                 {
-                beskills.map((skill,idx)=>{
+                aiskills.map((skill,idx)=>{
                     return  <SkillCard icon={skill.icon} title={skill.title} body={skill.description} > 
                     </SkillCard>
                 })
@@ -87,7 +87,7 @@ const AISkills=()=>{
                 </div>
                 <div>
                 {
-                beskilllevels.map((beskilllevel,idx)=>{
+                aiskilllevels.map((beskilllevel,idx)=>{
                     return  <SkillLevel  title={beskilllevel.title} level={beskilllevel.level} > 
                     </SkillLevel>
                 })
