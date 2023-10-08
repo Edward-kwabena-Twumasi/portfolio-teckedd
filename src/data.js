@@ -22,7 +22,7 @@ import analyst from "./assets/data-analyst.png";
 import notesUrl from "./assets/notes.png";
 import pandas from "./assets/certs/pandas-cert.png";
 import nsmq from "./assets/certs/nsmq1.png";
-
+import sdlc from "./assets/certs/SDLC-cert.png";
 import intro_ml from "./assets/certs/intro-ml-cert.png";
 import interm_ml from "./assets/certs/interm-ml-cert.png";
 
@@ -159,6 +159,18 @@ export const beskilllevels=[
 
      },
      {
+   
+      "title":"Redis",
+      "level":"90%"
+  
+       },
+       {
+   
+        "title":"Elastic Search",
+        "level":"100%"
+    
+         },
+     {
       
        "title":"Mongodb",
        "level":"90%"
@@ -294,6 +306,13 @@ export const projects=[
 ]
 
 export const certificates = [
+  {
+    name: 'SDLC',
+    description: 'Software development life cycle',
+    date: '2023',
+    issuer: 'LinkedIn',
+    img: sdlc
+  },
   {
     name: 'Pandas',
     description: 'Explore clean and prepare your data',

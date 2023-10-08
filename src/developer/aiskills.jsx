@@ -7,7 +7,7 @@ import { useEffect,useRef } from 'react';
 
 
 
-const Backend=()=>{
+const AISkills=()=>{
     const myRef = useRef(null);
     
     useEffect(() => {
@@ -75,7 +75,7 @@ const Backend=()=>{
 
     return (
         <div ref={myRef} className="flex flex-col pl-14 h-full">
-            <h1 className="title text-3xl text-white font-bold m-3 text-center">Back end skills</h1>
+            <h1 className="title text-3xl text-white font-bold m-3 text-center">AI/Data Science</h1>
             <div className="lg:flex justify-around">
                 <div>
                 {
@@ -102,4 +102,4 @@ const Backend=()=>{
     )
 }
 
-export default Backend 
+export default AISkills 

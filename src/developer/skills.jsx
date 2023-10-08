@@ -6,7 +6,7 @@ import { Link, Outlet} from 'react-router-dom';
 const Skills=forwardRef((props,ref)=>{
 
 const [index,setIndex]=useState(0)
-let styles=["border-2",""]
+let styles=["border-2","",""]
 const handleClick=(newIndex)=>{
   setIndex(newIndex)
 }
@@ -84,6 +84,7 @@ useEffect(() => {
                 <div className="flex gap-6 lg:mt-5 mt-20 justify-center">
                     <Link onClick={()=>handleClick(0)} to='frontend'><button className= {`text-white rounded-full p-2 px-6 border-white  ${styles[index]}` } onClick={()=>handleClick(0)}>Frontend </button></Link>
                     <Link onClick={()=>handleClick(1)} to='backend'> <button className={`text-white rounded-full p-2 px-6 border-white ${styles[1-index]}` } onClick={()=>handleClick(1)}>Backend</button> </Link>
+                    <Link onClick={()=>handleClick(2)} to='ai'> <button className={`text-white rounded-full p-2 px-6 border-white ${styles[2-index]}` } onClick={()=>handleClick(1)}>AI/Data Science</button> </Link>
 
                 </div>
                 <div ref={myRef} className="overflow-scroll hide-scroll">

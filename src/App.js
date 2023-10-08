@@ -20,6 +20,7 @@ import {GoTasklist} from "react-icons/go"
 import {FaPhone} from "react-icons/fa"
 import {FaCertificate} from "react-icons/fa"
 import Achievements from './developer/achievements';
+import AISkills from './developer/aiskills';
 
 
 
@@ -80,8 +81,9 @@ function App() {
                     {/* <Route exact path="/about" element={<About/>}></Route> */}
                     <Route path="/skills" element={<Skills ref={skillsRef}/>}>
                      <Route exact path="frontend"  element={<Frontend  />}></Route> 
-                     <Route exact path="backend"  element={<Backend  />}></Route> 
-                     <Route index element={<Frontend />} />          
+                     <Route exact path="backend"  element={<Backend  />}></Route>
+                     <Route exact path="ai"  element={<AISkills  />}></Route> 
+                     <Route index element={<AISkills />} />          
                    
                     </Route>
                     <Route exact path="/projects" element={<Projects/>}>

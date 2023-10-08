@@ -38,11 +38,12 @@ const Achievements = () => {
   };
 
   return (
-    <div className='flex flex-col w-full'>
+    <div className='flex flex-col w-full h-full overflow-scroll hide-scroll'>
       <h1 className="title p-4 text-white font-bold m-3 text-center">Certificates and Achievements</h1>
-      <div className="flex flex-wrap">
+
+      <div className="flex flex-wrap justify-evenly">
         {certificates.map((certificate, index) => (
-          <div key={index} className="w-full md:w-1/2 lg:w-1/3 p-4 relative m-3 rounded-sm" style={{ backgroundImage: `url(${certificate.img})`, backgroundSize: "cover" }}>
+          <div key={index} className="w-full md:w-1/2 lg:w-1/3 p-4 relative m-6 rounded-sm" style={{ backgroundImage: `url(${certificate.img})`, backgroundSize: "cover" }}>
             <div
               className="w-full h-64 object-cover rounded cursor-pointer"
               onClick={() => openModal(certificate.img)}
